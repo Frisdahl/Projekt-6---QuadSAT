@@ -13,6 +13,11 @@ body {
   align-items: center;
 }
 
+img {
+  height: 100%;
+  width: 100%;
+}
+
 
 .login-container {
   background-color: #292929;
@@ -24,7 +29,77 @@ body {
   align-items: center;
 }
 
+.logo-container {
+  position: relative;
+  top: 15px;
+  left: 175px;
+  height: 120px;
+  width: 255.5px;
+}
+
 .item-container {
   width: 590px;
   height: 350px;
+}
+
+.form-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  min-width: 325px;
+}
+
+.login-form > * {
+  height: 50px;
+  width: 325px;
+  border-radius: 5px;
+  border: none;
+}
+
+#username {
+  margin-top: 25px;
+}
+
+#password {
+  margin-top: 15px;
+}
+
+label {
+  font-size: 16px;
+  color: #FFFFFF;
+  opacity: 60%;
+  margin-top: 7px;
+}
+
+.bottom-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  background-color: #292929;
+  color: #0D76BD;
+  text-align: center;
+  padding: 7px 15px 7px 15px;
+  font-family: 'roboto';
+  font-weight: 500;
+  border: 1px solid #757575;
+  border-radius: 5px;
+}
+
+.cta-btn {
+  background-color: #0D76BD;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 7px 15px 7px 15px;
+  font-family: 'roboto';
+  font-weight: 500;
+  border: none;
+  border-radius: 5px;
 }
