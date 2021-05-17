@@ -1,0 +1,30 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background-color: #0D76BD;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.login-container {
+  background-color: #292929;
+  height: 420px;
+  width: 640px;
+  box-shadow: 2px 2px 8px black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-container {
+  width: 590px;
+  height: 350px;
+}
