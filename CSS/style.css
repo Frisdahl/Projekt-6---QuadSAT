@@ -23,6 +23,35 @@ button:hover {
   cursor: pointer;
 }
 
+h1 {
+  font-family: 'roboto';
+  font-size: 96px;
+}
+
+h2 {
+  font-family: 'roboto';
+  font-size: 60px;
+}
+
+h3 {
+  font-family: 'roboto';
+  font-size: 48px;
+}
+
+h4 {
+  font-family: 'roboto';
+  font-size: 34px;
+}
+
+h5 {
+  font-family: 'roboto';
+  font-size: 24px;
+}
+
+.transparent-btn {
+  background-color: transparent;
+  border: none;
+}
 
 .login-container {
   background-color: #292929;
@@ -54,13 +83,9 @@ button:hover {
   margin-top: 25px;
 }
 
-.login-form {
+.input-box {
   display: flex;
   flex-direction: column;
-  min-width: 325px;
-}
-
-.login-form > * {
   height: 50px;
   width: 325px;
   border-radius: 5px;
@@ -85,6 +110,7 @@ label {
 .bottom-container {
   display: flex;
   justify-content: space-between;
+  margin-top: 35px;
 }
 
 .btn {
@@ -115,4 +141,83 @@ label {
   color: black;
   padding-left: 15px;
   opacity: 50%;
+}
+
+#faq-btn {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+}
+
+#faq-icon {
+  font-size: 48px;
+  color: #ffffff;
+}
+
+
+/* Slut for login side */
+
+/* Start for Forgot password */
+
+
+.forgot-password-container {
+  background-color: #121212;
+  height: 420px;
+  width: 640px;
+  box-shadow: 2px 2px 8px black;
+}
+
+#h4-forgot-password {
+  color: #ffffff;
+  position: relative;
+  top: 75px;
+  left: 25px;
+}
+
+.p-text {
+  color: #ffffff;
+  position: relative;
+  top: 115px;
+  left: 25px;
+  opacity: 75%;
+}
+
+#forgot-password-username {
+  position: relative;
+  top: 160px;
+  left: 150px;
+}
+
+#send-mail-cta {
+  position: relative;
+  top: 230px;
+  left: 525px;
+}
+
+#cancel-btn {
+  color: #E9E9E9;
+  position: relative;
+  top: -115px;
+  left: 500px;
+}
+
+/* Slut på forgot password */
+
+/* Start på FAQ */
+
+
+.faq-container {
+  height: 420px;
+  width: 640px;
+  background-color: #292929;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  border: 1px solid #FFFFFF;
+}
+
+.blue-side {
+  height: 418px;
+  width: 200px;
+  background-color: #0D76BD;
 }
