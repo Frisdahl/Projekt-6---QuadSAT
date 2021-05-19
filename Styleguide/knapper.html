@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/styleguide.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Knapper</title>
+  </head>
+  <body>
+
+    <nav>
+        <div class="logo">
+            <img src="/img/quadsat-logo-hvid.png" alt="Logo til Børns Voksenvenner">
+        </div>
+        <p>Style Guide</p>
+        <ul>
+            <li>
+                <div></div><a href="index.html">Forside</a>
+            </li>
+            <li> 
+                <div></div><a href="billeder.html">Billeder</a>
+            </li>
+            <li>
+                <div></div><a href="typografi.html">Typografi</a>
+            </li>
+            <li>
+                <div></div><a href="farver.html">Farver</a>
+            </li>
+            <li>
+                <div class="selected"></div><a href="knapper.html">Knapper</a>
+            </li>
+            <li>
+                <div></div><a href="ikoner.html">Ikoner</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <h3>Knapper</h3>
+
+        <h4>Generelt for knapper</h4>
+        <p>Alle knapper skrives med versaler. </p>
+        <p>Desuden gælder følgende regler for knapper:</p>
+
+        <div class="snippet">
+            <pre><code>
+    CSS:
+    button {
+        cursor: pointer;
+    }
+    
+    button span {
+        margin-right: 5px;
+    }
+            </code></pre>
+        </div>
+        <br>
+        <p>Hvis knappen indeholder ikon, skrives det på følgende måde:</p>
+        <div class="snippet">
+            <pre><code>
+    HTML
+    &lt;span class=&quot;material-icons&quot;&gt;NAVN FRA GOOGLE ICONS&lt;/span&gt;
+            </code></pre>
+        </div>
+        <br>
+
+        <h5>Almindelig call to action</h5>
+        <button class="cta-btn">
+            <span class="material-icons">add</span>
+            CALL TO ACTION
+        </button>
+
+        <p>Bruges til vigtige knapper, der enten fører videre i en proces eller afslutter en proces.</p>
+        <p>Bruges på hvide baggrunde.</p>
+        <div class="snippet">
+            <pre><code>
+    HTML:
+    &lt;button class=&quot;cta-btn&quot;&gt;
+        &lt;span class=&quot;material-icons&quot;&gt;add&lt;/span&gt;
+            KNAPPENS TEKST HER
+    &lt;/button&gt;
+
+    CSS:
+    .cta-btn {
+        background-color: #0D76BD;
+        width: fit-content;
+        color: #FFFFFF;
+        text-align: center;
+        padding: 7px 15px 7px 15px;
+        margin-bottom: 10px;
+        font-family: 'roboto';
+        font-weight: 500;
+        border: none;
+        border-radius: 5px;
+      
+        display: flex;
+        align-items: center;
+    }
+            </code></pre>
+        </div>
+        <br>
+
+        <h5>Alternativ call to action</h5>
+        <button class="cta-btn alt">
+            <span class="material-icons">add</span>
+            CALL TO ACTION
+        </button>
+        <p>Bruges på samme måde som ovenstående, men på mørke baggrunde</p>
+        <div class="snippet">
+            <pre><code>
+    HTML:
+    &lt;button class=&quot;cta-btn alt&quot;&gt;
+        &lt;span class=&quot;material-icons&quot;&gt;add&lt;/span&gt;
+            KNAPPEN TEKST HER
+    &lt;/button&gt;
+
+    CSS:
+    .cta-btn.alt {
+        color: #000;
+    }
+            </code></pre>
+        </div>
+        <br>
+
+        <h5>Almindelig knap</h5>
+        <button class="btn">
+            <span class="material-icons">add</span>
+            TILBAGE
+        </button>
+        <p>Bruges til andre typer knapper, som ikke kræver særlig formatering</p>
+
+        <div class="snippet">
+            <pre><code>
+    HTML: 
+    &lt;button class=&quot;btn&quot;&gt;
+        &lt;span class=&quot;material-icons&quot;&gt;add&lt;/span&gt;
+            KNAPPENS TEKST HER
+    &lt;/button&gt;
+
+    CSS:
+    .btn {
+        background-color: #292929;
+        width: fit-content;
+        color: #0D76BD;
+        text-align: center;
+        padding: 7px 15px 7px 15px;
+        margin-bottom: 10px;
+        font-family: 'roboto';
+        font-weight: 500;
+        border: 1px solid #757575;
+        border-radius: 5px;
+      
+        display: flex;
+        align-items: center;
+    }
+            </code></pre>
+        </div>
+        <br>
+
+        <h5>Tabs-knapper</h5>
+        <div class="tab-btn-container">
+            <button class="tab-btn selected">Brief</button>
+            <button class="tab-btn">Antenna</button>
+            <button class="tab-btn">Drone</button>
+        </div>
+        <br>
+        <p>Bruges til processer som en indikator for progression samt navigation</p>
+        <p>Den valgte tab-knap gives classen "selected" for at vise blå grafik</p>
+
+        <div class="snippet">
+            <pre><code>
+    HTML: 
+    &lt;div class=&quot;tab-btn-container&quot;&gt;
+        &lt;button class=&quot;tab-btn selected&quot;&gt;Brief&lt;/button&gt;
+        &lt;button class=&quot;tab-btn&quot;&gt;Antenna&lt;/button&gt;
+        &lt;button class=&quot;tab-btn&quot;&gt;Drone&lt;/button&gt;
+    &lt;/div&gt;
+
+    CSS: 
+    .tab-btn-container {
+        width: 300px;
+        display: flex;
+        box-shadow: 0 3px 3px 0 #1b1b1b;
+        margin: 0;
+    }
+      
+    .tab-btn {
+        background-color: #292929;
+        color: white;
+        width: 100px;
+        border: none;
+        padding: 10px;
+    }
+
+    .tab-btn.selected {
+        color: #0D76BD;
+        border-bottom: solid 2px #0D76BD;
+    }
+            </code></pre>
+        </div>
+        <br>
+    </main>
+
+  </body>
+</html>
