@@ -71,3 +71,23 @@ h2 {
     align-items: center;
     padding-top: 20px;
 }
+
+.brief-middel {
+    width: 300px;
+    display: flex;
+    box-shadow: 0 3px 3px 0 #1b1b1b;
+    margin: 0;
+  }
+  
+  .breadcrumbs-container {
+    background-color: #292929;
+    color: white;
+    width: 100px;
+    border: none;
+    padding: 10px;
+  }
+  
+  .breadcrumbs-container.button {
+    color: #0D76BD;
+    border-bottom: solid 2px #0D76BD;
+  }
