@@ -214,10 +214,38 @@ label {
   bottom: 10px;
   right: 10px;
   border: 1px solid #FFFFFF;
+  display: flex;
 }
 
 .blue-side {
   height: 418px;
   width: 200px;
   background-color: #0D76BD;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.faq-logo-container {
+  margin-top: 50px;
+  height: 145px;
+  width: 145px;
+}
+
+#faq-h3 {
+  color: white;
+}
+
+.faq-icon-container {
+  margin-top: 25px;
+  width: 300px;
+  height: 325px;
+  align-self: center;
+  margin-left: 85px;
+}
+
+#faq-title-h4 {
+  position: relative;
+  color: #ffffff;
 }
