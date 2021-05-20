@@ -48,6 +48,20 @@ h5 {
   font-size: 24px;
 }
 
+h6 {
+  font-family: 'roboto';
+  font-size: 20px;
+}
+
+#sub-title {
+  font-size: 14px;
+  font-weight: bold;
+  font-family: 'roboto';
+  color: #fffffF;
+  text-align: center;
+}
+
+
 .transparent-btn {
   background-color: transparent;
   border: none;
@@ -237,7 +251,8 @@ label {
   color: white;
 }
 
-.faq-icon-container {
+
+.faq-all-icons-container {
   margin-top: 25px;
   width: 300px;
   height: 325px;
@@ -245,7 +260,44 @@ label {
   margin-left: 85px;
 }
 
+.faq-icon-container {
+  width: 270px;
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 25px;
+}
+
 #faq-title-h4 {
   position: relative;
   color: #ffffff;
+}
+
+#img-mangement {
+  width: 80%;
+  height: 80%;
+}
+
+.faq-management-container {
+  height: 116px;
+  width: 100px;
+}
+
+.mangement-img-container {
+  height: 100px;
+  width: 100px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.faq-careers-container {
+  margin-top: 20px;
+}
+
+.faq-contact-container {
+  margin-top: 20px;
 }
