@@ -12,6 +12,14 @@ main {
     position: relative;
 }
 
+button:focus, input:focus {
+    outline:none;
+}
+
+button span {
+    margin-right: 5px;
+}
+
 .dashboard button {
     display: flex;
     align-items: center;
@@ -22,16 +30,35 @@ main {
 .dashboard .title-bar {
     background-color: black;
     width: 100%;
-    height: 5vh;
+    height: 50px;
     position: relative;
 }
 
 .dashboard .file-menu-bar {
     background-color: #121212;
-    width: inherit;
-    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    width: 100%;
+    height: 30px;
+    padding-right: 15px;
     position: absolute;
     bottom: 0;
+}
+
+.dashboard .file-menu-bar p {
+    margin: 0;
+}
+
+.dashboard .file-menu-bar span {
+    margin-left: 15px;
+}
+
+.dashboard .file-menu-bar div {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
 }
 
 .dashboard .side-bar {
@@ -39,7 +66,7 @@ main {
     width: 300px;
     min-height: 95vh;
     border-top: solid 1px grey;
-    padding: 20px;
+    padding: 15px;
 }
 
 .dashboard .side-bar .top {
@@ -62,6 +89,7 @@ main {
     background-color: rgba(255, 255, 255, 0.11);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
+    margin-bottom: 10px;
     width: 100%;
     height: 50vh;
 }
@@ -69,6 +97,8 @@ main {
 .dashboard .side-bar .status-bar {
     background-color: rgba(255, 255, 255, 0.11);
     margin: 10px 0 0 0;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
     width: 100%;
     height: 15vh;
 }
@@ -76,6 +106,27 @@ main {
 .dashboard .material-icons.md-light { 
     color: rgba(255, 255, 255, 1);
     cursor: pointer;
+}
+
+.dashboard .operation-area-container {
+    position: absolute;
+    left: 300px;
+    top: 50px;
+    right: 0;
+    bottom: 0;
+}
+
+.dashboard .cta-container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.dashboard .cta-container button {
+    color: white;
+    font-size: 18px;
+    padding: 7px 15px 7px 15px;
 }
 
 .cta-btn {
@@ -90,7 +141,7 @@ main {
 }
 
 .btn {
-    background-color: #292929;
+    background-color: black;
     color: #0D76BD;
     text-align: center;
     /* padding: 7px 15px 7px 15px; */
@@ -98,4 +149,28 @@ main {
     font-weight: 500;
     border: 1px solid #757575;
     border-radius: 5px;
+}
+
+.tab-btn-container {
+    width: 300px;
+    display: flex;
+    box-shadow: 0 3px 3px 0 #1b1b1b;
+    margin: 0;
+}
+  
+.tab-btn {
+    background-color: #292929;
+    color: #757575;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    border: none;
+    padding: 10px;
+    margin-bottom: 0 !important;
+}
+  
+.tab-btn.selected {
+    color: #0D76BD;
+    border-bottom: solid 2px #0D76BD;
 }
