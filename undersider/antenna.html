@@ -36,37 +36,74 @@
                 <input type="text" placeholder="Manufacturer">
                 <input type="text" placeholder="Model">
                 <input type="text" placeholder="Effective diameter">
-                <input type="text" placeholder="Latitude">
-            </div>
-            <div class="grid-item">
-                <input type="text" placeholder="Longitude">
-                <input type="text" placeholder="Altitude">
-                <input type="text" placeholder="Azimuth">
-                <input type="text" placeholder="Elevation">
-            </div>
-            <div class="grid-item">
-                <input type="text" placeholder="Frequency">
-                <div>
-                    <p>Polarization</p>
-                    <input type="radio" id="vertical" name="polarization">
-                    <label for="vertical">Vertical</label>
-                    <input type="radio" id="horizontal" name="polarization">
-                    <label for="horizontal">Horizontal</label>                
+                <div class="configuration">
+                    <label for="">Configuration</label>
+                    <input type="text" placeholder="Latitude">
                 </div>
-                <div>
-                    <p>Radome</p>
-                    <input type="radio" id="on" name="radome">
-                    <label for="on">On</label>
-                    <input type="radio" id="off" name="radome">
-                    <label for="off">Off</label>                
-                    <input type="radio" id="na" name="radome">
-                    <label for="na">N/A</label>                
+            </div>
+            <div class="grid-item">
+                <div class="configuration">
+                    <label for="">Configuration</label>
+                    <input type="text" placeholder="Longitude">
+                </div>
+                <div class="configuration">
+                    <label for="">Configuration</label>
+                    <input type="text" placeholder="Altitude">
+                </div>
+                <div class="configuration">
+                    <label for="">Configuration</label>
+                    <input type="text" placeholder="Azimuth">
+                </div>
+                <div class="configuration">
+                    <label for="">Configuration</label>
+                    <input type="text" placeholder="Elevation">
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="configuration">
+                    <label for="">Configuration</label>
+                    <input type="text" placeholder="Frequency">
+                </div>
+                <div class="radio">
+                    <div class="item">
+                        <p>Polarization</p>
+                        <div class="option-container">
+                            <div class="option">
+                                <input type="radio" id="vertical" name="polarization">
+                                <label for="vertical">Vertical</label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" id="horizontal" name="polarization">
+                                <label for="horizontal">Horizontal</label>                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <p>Radome</p>
+                        <div class="option-container">
+                            <div class="option">
+                                <input type="radio" id="on" name="radome">
+                                <label for="on">On</label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" id="off" name="radome">
+                                <label for="off">Off</label>                
+                            </div>
+                            <div class="option">
+                                <input type="radio" id="na" name="radome">
+                                <label for="na">N/A</label>                                                
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="brief-bottom-container">
+        <div class="brief-bottom-container" style="padding-left: 20px; display:flex; justify-content:space-between">
             <button class="cta-btn alt">
-                NEXT TO ANTENNA
+                BACK TO BRIEF
+            </button>
+            <button class="cta-btn alt">
+                NEXT TO DRONE
             </button>
         </div>
     </div>
