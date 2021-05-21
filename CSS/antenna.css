@@ -12,7 +12,7 @@ body {
 
 /* Modalens indhold, herunder logo, luk knap og overskrift */
 .brief-container {
-    height: 550px;
+    height: 500px;
     width: 600px;
     background-color: #2F2F2F;
     display: flex;
@@ -36,15 +36,14 @@ body {
 }
 
 .icon {
-    top: 15px;
-    right: 15px;
-    position: absolute;
+    padding-right: 15px;
+    padding-top: 15px;
 }
 
 .close-btn {
     height: 24px;
     width: 24px;
-
+    
 }
 
 h2 {
@@ -55,22 +54,13 @@ h2 {
 h3 {
     color: #E9E9E9;
     font-family: 'Roboto', 'Sans-serif';
-    width: 100%;
 }
 
 /* Title for modalen */
 .modal-title {
-    /* background-color: turquoise; */
-    width: 100%;
     display: flex;
-    flex-direction: row;
     justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding-bottom: 5px;
-}
-.modal-title h3 {
-    font-size: 40px;
+
 }
 
 /* Navbaren med brief highlighted i blå */
@@ -83,7 +73,7 @@ h3 {
     align-items: center;
     margin: 0;
   }
-
+  
   .tab-btn-container {
     display: flex;
     flex-direction: row;
@@ -102,7 +92,7 @@ h3 {
     border: none;
     padding: 10px;
   }
-
+  
   .tab-btn.selected {
     color: #0D76BD;
     border-bottom: solid 2px #0D76BD;
@@ -118,14 +108,14 @@ h3 {
 }
 
 .brief-box {
-    width:250px;
-    padding: 15px 10px;
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
     margin-top: 10px;
     margin-bottom: 10px;
     background-color: #2F2F2F;
     color: #A8A8A8;
     border: solid 1px #A8A8A8;
-    text-align: left;
 }
 
 button {
@@ -136,11 +126,14 @@ button span {
     margin-right: 5px;
 }
 
+
+
+
 /* Next knappen, med felt til senere previous knap */
   .cta-btn {
     background-color: #0D76BD;
     width: fit-content;
-    color: #2F2F2F;
+    color: #FFFFFF;
     text-align: center;
     padding: 7px 15px 7px 15px;
     margin-bottom: 10px;
@@ -150,138 +143,88 @@ button span {
     border-radius: 5px;
     display: flex;
     align-items: center;
-    }
+    } 
 
 .brief-bottom-container {
     width: 100%;
     display: flex;
     justify-content: flex-end;
     padding-top: 20px;
-    padding-bottom: 10px;
     position: absolute;
     bottom: 0;
     padding-right: 20px;
-    padding: 10px;
-  }
-
-  .breadcrumbs-container {
-    color: #0D76BD;
-    border-bottom: solid 2px #0D76BD;
-  }
-
-
-/*Her starter open mission CSS - Bui */
-
-.open-middle-container1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-  .open-title {
-    color: #E9E9E9;
-    font-family: 'Roboto', 'Sans-serif';
-    padding-left: 61px;
-    padding-bottom: 5px;
-    margin: 0;
-  }
-
-.recent-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    background-color: #5F5F5F;
-    height: 110px;
-    width: 475px;
-    padding-top: 18px;
-    padding-bottom: 18px;
-    margin-bottom: 20px;
 }
 
 
-h4 {
-    font-family: 'Roboto', 'Sans-serif';
-    color: #E9E9E9;
-    margin-top: 8px;
-}
-
-p {
-    font-family: 'Roboto', 'Sans-serif';
-    color: #CACACA;
-    font-size: 12px;
-    margin-top: 3px;
-
-}
-
-.mission-container1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    background-color: #7B7B7B;
-    margin-left: 8px;
-    width: 200px;
-}
-
-.mission-container2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    background-color: #7B7B7B;
-    width: 200px;
-    margin-right: 8px;
-}
-
-.open-middle-container2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.files-container {
-    display: flex;
-    flex-direction: column;
-    background-color: #5F5F5F;
-    height: 200px;
-    width: 475px;
-}
-
-.title-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 475px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-
-.files-title {
-    color: #CACACA;
-}
-
-.mission-container3 {
+/* Antenna */
+.antenna-input-container {
     display: grid;
-    grid-template-columns: 50px 150px 100px 100px;
-    width: 475px;
+    grid-template-columns: auto auto auto;
+    grid-gap: 5px;
+    padding: 0 40px;
+    margin-top: 20px;
 }
 
-.mission-checkbox-container {
+.antenna-input-container .grid-item {
     display: flex;
     flex-direction: column;
-    padding-bottom: 5px;
+    justify-content: space-between;
 }
 
-input {
-    margin-top: 4px;
+.antenna-input-container .grid-item .configuration {
+    position: relative;
 }
 
-.mission-text-container {
-    margin-left: 6px;
+.antenna-input-container .grid-item .configuration label {
+    background: #2f2f2f;
+    padding: 0 2px;
+    font-size: 10px;
+    font-family: 'roboto', sans-serif;
+    color: #a8a8a8;
+    position: absolute;
+    top: 4px;
+    left: 10px;
 }
 
-.mission-visited-container {
-    margin-left: 2px;
+.antenna-input-container input[type=text] {
+    width: 150px;
+    padding: 15px 10px;
+    margin: 10px 10px 0 0;
+    background-color: #2F2F2F;
+    color: #A8A8A8;
+    border: solid 1px #7E7E7E;
+    text-align: left;
 }
 
-.mission-created-container {
-    margin-left: 77px;
+.antenna-input-container .radio {
+    font-family: 'roboto', sans-serif;
+    color: white;
+    width: 150px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.antenna-input-container .radio .item {
+    font-size: 12px;
+}
+
+.antenna-input-container .radio .item .option-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.antenna-input-container .radio .item .option-container .option {
+    color: #a8a8a8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.antenna-input-container .radio .item .option-container .option label {
+    margin-top: 5px;
+
 }
