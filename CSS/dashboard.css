@@ -67,7 +67,6 @@ button span {
     display: flex;
     flex-flow: column;
     height: 100%;
-    border-top: solid 1px grey;
     padding: 15px;
 }
 
@@ -108,6 +107,10 @@ button span {
     border-top-right-radius: 4px;
     width: 100%;
     height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #a1a1a1;
 }
 
 .dashboard .material-icons.md-light { 

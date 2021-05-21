@@ -8,6 +8,7 @@ body {
   height: 100vh;
   width: 100%;
   background-color: #0D76BD;
+  font-family: 'roboto', sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -73,28 +74,39 @@ h6 {
   width: 640px;
   box-shadow: 2px 2px 8px black;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
 .logo-container {
-  position: relative;
+  /* position: relative;
   top: 15px;
-  left: 175px;
+  left: 175px; */
   height: 120px;
   width: 255.5px;
 }
 
 .item-container {
   width: 590px;
-  height: 350px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .form-container {
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-top: 25px;
+  margin-top: 10px;
+}
+
+.form-container div {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .input-box {
@@ -122,9 +134,10 @@ label {
 }
 
 .bottom-container {
+  width: 325px;
   display: flex;
   justify-content: space-between;
-  margin-top: 35px;
+  margin-top: 10px;
 }
 
 .btn {
@@ -175,44 +188,64 @@ label {
 
 
 .forgot-password-container {
-  background-color: #121212;
+  background-color: #292929;
   height: 420px;
   width: 640px;
   box-shadow: 2px 2px 8px black;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.forgot-password-container div {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+}
+
+.forgot-password-container div .input-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.forgot-password-container div .input-container .input-box {
+  width: 100%;
+}
+
+.forgot-password-container div .forgot-btn-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 
 #h4-forgot-password {
   color: #ffffff;
-  position: relative;
-  top: 75px;
-  left: 25px;
 }
 
 .p-text {
   color: #ffffff;
-  position: relative;
-  top: 115px;
-  left: 25px;
   opacity: 75%;
 }
 
 #forgot-password-username {
-  position: relative;
-  top: 160px;
-  left: 150px;
+  margin-top: 20px;
 }
 
 #send-mail-cta {
-  position: relative;
-  top: 230px;
-  left: 525px;
+  width: fit-content;
+  margin-top: 10px;
 }
 
 #cancel-btn {
   color: #E9E9E9;
-  position: relative;
-  top: -115px;
-  left: 500px;
+  position: absolute;
+  top: 25px;
+  right: 25px;
 }
 
 /* Slut på forgot password */
