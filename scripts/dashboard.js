@@ -48,7 +48,7 @@ function createMission() {
     }
 }
 
-clear_btn.addEventListener('click', clearList)
+clear_btn.addEventListener('click', clearList);
 cancel_clear.addEventListener('click', cancelClear);
 confirm_clear.addEventListener('click', confirmClear);
 create_mission_sidebar.addEventListener('click', createMission);
