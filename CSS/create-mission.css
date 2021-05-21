@@ -1,3 +1,8 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
 body {
     display: flex;
     justify-content: center;
@@ -5,12 +10,14 @@ body {
     height: 100vh;
 }
 
+/* Modalens indhold, herunder logo, luk knap og overskrift */
 .brief-container {
     height: 500px;
     width: 600px;
     background-color: #2F2F2F;
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 .brief-top {
@@ -44,26 +51,42 @@ h2 {
     padding-left: 10px;
 }
 
+/* Navbaren med brief highlighted i blå */
+
 .brief-middle {
+    width: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    
-}
-
-.breadcrumbs-container {
+    margin: 0;
+  }
+  
+  .tab-btn-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     background-color: #272727;
     color: #E9E9E9;
-    width: 300px;
-    padding-left: 15px;
-    padding-right: 15px;
+    width: fit-content;
     font-family: 'Roboto', 'Sans-serif';
-    box-shadow: 0 3px 3px 0  #1b1b1b;
+    box-shadow: 0 2px 3px 0  #1b1b1b;
 }
+.tab-btn {
+    background-color: #292929;
+    color: white;
+    width: 100px;
+    border: none;
+    padding: 10px;
+  }
+  
+  .tab-btn.selected {
+    color: #0D76BD;
+    border-bottom: solid 2px #0D76BD;
+  }
+
+/* Inputboxene */
 
 .briefinput {
     display: flex;
@@ -72,22 +95,44 @@ h2 {
     padding-top: 20px;
 }
 
-.brief-middel {
-    width: 300px;
-    display: flex;
-    box-shadow: 0 3px 3px 0 #1b1b1b;
-    margin: 0;
-  }
-  
-  .breadcrumbs-container {
-    background-color: #292929;
-    color: white;
-    width: 100px;
+.brief-box{
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    cursor: pointer;
+}
+
+button span {
+    margin-right: 5px;
+}
+
+/* Next knappen, med felt til senere previous knap */
+  .cta-btn {
+    background-color: #0D76BD;
+    width: fit-content;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 7px 15px 7px 15px;
+    margin-bottom: 10px;
+    font-family: 'roboto';
+    font-weight: 500;
     border: none;
-    padding: 10px;
-  }
-  
-  .breadcrumbs-container. {
-    color: #0D76BD;
-    border-bottom: solid 2px #0D76BD;
-  }
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    } 
+
+.brief-bottom-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 20px;
+    position: absolute;
+    bottom: 0;
+    padding-right: 20px;
+}
