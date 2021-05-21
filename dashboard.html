@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/dashboard.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="./scripts/dashboard.js" defer></script>
     <title>Dashboard</title>
 </head>
 <body>
@@ -14,22 +15,22 @@
         <div class="dashboard">
             <div class="title-bar">
                 <div class="file-menu-bar">
-                    <span class="material-icons md-light">menu</span>
+                    <span class="material-icons md-light" id="settings">menu</span>
                     <p>QuadSAT: Flight Assistent</p>
                     <div>
                         <p>Logged in as: Guest</p>
-                        <span class="material-icons md-light">account_circle</span>
-                        <span class="material-icons md-light">search</span>
+                        <span class="material-icons md-light" id="account">account_circle</span>
+                        <span class="material-icons md-light" id="search">search</span>
                     </div>
                 </div>
             </div>
             <div class="side-bar">
                 <div class="top">
                     <h2>Mission List</h2>
-                    <span class="material-icons md-light">search</span>
+                    <span class="material-icons md-light" id="search-missions">search</span>
                 </div>
                 <div class="btn-container">
-                    <button class="cta-btn">
+                    <button class="cta-btn" id="create-mission-sidebar">
                         <span class="material-icons">add</span>
                         CREATE NEW MISSION
                     </button>
@@ -38,18 +39,18 @@
                             <span class="material-icons">folder_open</span>
                             OPEN MISSIONS
                         </button>
-                        <button class="btn">
+                        <button class="btn" id="remove-missions">
                             <span class="material-icons">remove</span>
                             REMOVE
                         </button>
                     </div>
 
                 </div>
-                <div class="mission-list">
+                <div class="mission-list" id="mission-list">
     
                 </div>
 
-                <button class="btn">
+                <button class="btn" id="clear-list">
                     <span class="material-icons">remove</span>
                     CLEAR
                 </button>
@@ -79,6 +80,16 @@
                 </div>
             </div>
             
+            <div class="clear-list-warning" id="clear-list-warning" style="display: none;">
+                <h3>Confirm action:</h3>
+                <h2>"Clear list"</h2>
+                <p>This will clear the current mission list and take you back to the start screen</p>
+                <div>
+                    <button class="cta-btn" id="cancel-clear">CANCEL</button>
+                    <button class="btn" id="confirm-clear">CONFIRM</button>
+                </div>
+            </div>
+
         </div>
     </main>
 

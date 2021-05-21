@@ -87,8 +87,13 @@ button span {
 
 .dashboard .side-bar .mission-list {
     background-color: rgba(255, 255, 255, 0.11);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
+    padding: 10px;
     margin-bottom: 10px;
     width: 100%;
     height: 50vh;
@@ -141,7 +146,7 @@ button span {
 }
 
 .btn {
-    background-color: black;
+    background-color: transparent;
     color: #0D76BD;
     text-align: center;
     /* padding: 7px 15px 7px 15px; */
@@ -173,4 +178,38 @@ button span {
 .tab-btn.selected {
     color: #0D76BD;
     border-bottom: solid 2px #0D76BD;
+}
+
+.clear-list-warning {
+    background-color: #2f2f2f;
+    color: white;
+    width: 345px;
+    height: 206px;
+    padding: 10px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: fixed;
+    left: 300px;
+    bottom: 0;
+}
+
+.clear-list-warning h3, h2, p {
+    text-align: center;
+    margin: 0 0 10px 0;
+}
+
+.clear-list-warning h2 {
+    color: #0D76BD;
+}
+
+.clear-list-warning div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.clear-list-warning button {
+    padding: 7px 15px;
 }
