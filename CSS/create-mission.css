@@ -36,8 +36,9 @@ body {
 }
 
 .icon {
-    padding-right: 15px;
-    padding-top: 15px;
+    top: 15px;
+    right: 15px;
+    position: absolute;
 }
 
 .close-btn {
@@ -135,9 +136,6 @@ button span {
     margin-right: 5px;
 }
 
-
-
-
 /* Next knappen, med felt til senere previous knap */
   .cta-btn {
     background-color: #0D76BD;
@@ -159,8 +157,11 @@ button span {
     display: flex;
     justify-content: flex-end;
     padding-top: 20px;
-    padding-bottom: 10px;;
+    padding-bottom: 10px;
     position: absolute;
     bottom: 0;
     padding-right: 20px;
 }
+
+/* slut på Brief */
+/* Start på Drone */
