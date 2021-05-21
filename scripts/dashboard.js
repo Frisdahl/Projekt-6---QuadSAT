@@ -23,16 +23,28 @@ function confirmClear() {
 }
 
 function createMission() {
-    mission_list.innerHTML = '';
+    if(mission_list.innerHTML !== '') {
+        mission_list.innerHTML = '';
 
-    let missionArr = ['UCL', 'Test flight', 'Hong Kong'];
-
-    for (i = 0; i < 3; i++) {
-        let mission = document.createElement('p');
-        mission.classList.add('mission');
-        mission.id = 'mission' + i;
-        mission.innerText = missionArr[i];
-        mission_list.appendChild(mission);
+        let missionArr = ['UCL', 'Test flight', 'Hong Kong'];
+        
+        for (i = 0; i < missionArr.length; i++) {
+            let mission = document.createElement('p');
+            mission.classList.add('mission');
+            mission.id = 'mission' + i;
+            mission.innerText = missionArr[i];
+            mission_list.appendChild(mission);
+        }
+    } else {
+        let missionArr = ['UCL', 'Test flight', 'Hong Kong'];
+        
+        for (i = 0; i < missionArr.length; i++) {
+            let mission = document.createElement('p');
+            mission.classList.add('mission');
+            mission.id = 'mission' + i;
+            mission.innerText = missionArr[i];
+            mission_list.appendChild(mission);
+        }
     }
 }
 

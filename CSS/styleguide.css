@@ -166,7 +166,7 @@ button span {
 }
 
 .btn {
-  background-color: #292929;
+  background-color: transparent;
   width: fit-content;
   color: #0D76BD;
   text-align: center;
@@ -179,6 +179,10 @@ button span {
 
   display: flex;
   align-items: center;
+}
+
+.special-padding {
+  padding: 1px 6px;
 }
 
 .tab-btn-container {

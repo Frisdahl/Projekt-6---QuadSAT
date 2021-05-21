@@ -64,7 +64,9 @@ button span {
 .dashboard .side-bar {
     background-color: #121212;
     width: 300px;
-    min-height: 95vh;
+    display: flex;
+    flex-flow: column;
+    height: 100%;
     border-top: solid 1px grey;
     padding: 15px;
 }
@@ -138,7 +140,8 @@ button span {
     background-color: #0D76BD;
     color: black;
     text-align: center;
-    /* padding: 7px 15px 7px 15px; */
+    width: fit-content;
+    padding: 7px 15px 7px 15px;
     font-family: 'roboto';
     font-weight: 500;
     border: none;
@@ -149,12 +152,17 @@ button span {
     background-color: transparent;
     color: #0D76BD;
     text-align: center;
-    /* padding: 7px 15px 7px 15px; */
+    width: fit-content;
+    padding: 7px 15px 7px 15px;
     font-family: 'roboto';
     font-weight: 500;
     border: 1px solid #757575;
     border-radius: 5px;
 }
+
+.special-padding {
+    padding: 1px 6px;
+  }
 
 .tab-btn-container {
     width: 300px;
