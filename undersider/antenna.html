@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/antenna.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+    <title>Create mission</title>
+</head>
+<body>
+    <div class="brief-container">
+        <div class="brief-top">
+            <div class="create-mission">
+                <img src="../img/emblem-hvid.png" alt="This is a logo">
+                <h2>Creating mission...</h2>
+            </div>
+            <div class="icon">
+                <img class="close-btn" src="../img/exit.png" alt="This is a closing icon">
+            </div>
+        </div>
+        <div class="modal-title">
+            <h3>Antenna</h3>
+        </div>
+        <div class="brief-middle">
+            <div class="tab-btn-container">
+                <button class="tab-btn">BRIEF</button>
+                <button class="tab-btn selected">ANTENNA</button>
+                <button class="tab-btn">DRONE</button>
+            </div>
+        </div>
+        <div class="antenna-input-container">
+            <div class="grid-item">
+                <input type="text" placeholder="Manufacturer">
+                <input type="text" placeholder="Model">
+                <input type="text" placeholder="Effective diameter">
+                <div class="configuration">
+                    <label for="">Configuration</label>
+                    <input type="text" placeholder="Latitude">
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="configuration">
+                    <label for="">Configuration</label>
+                    <input type="text" placeholder="Longitude">
+                </div>
+                <div class="configuration">
+                    <label for="">Configuration</label>
+                    <input type="text" placeholder="Altitude">
+                </div>
+                <div class="configuration">
+                    <label for="">Configuration</label>
+                    <input type="text" placeholder="Azimuth">
+                </div>
+                <div class="configuration">
+                    <label for="">Configuration</label>
+                    <input type="text" placeholder="Elevation">
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="configuration">
+                    <label for="">Configuration</label>
+                    <input type="text" placeholder="Frequency">
+                </div>
+                <div class="radio">
+                    <div class="item">
+                        <p>Polarization</p>
+                        <div class="option-container">
+                            <div class="option">
+                                <input type="radio" id="vertical" name="polarization">
+                                <label for="vertical">Vertical</label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" id="horizontal" name="polarization">
+                                <label for="horizontal">Horizontal</label>                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <p>Radome</p>
+                        <div class="option-container">
+                            <div class="option">
+                                <input type="radio" id="on" name="radome">
+                                <label for="on">On</label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" id="off" name="radome">
+                                <label for="off">Off</label>                
+                            </div>
+                            <div class="option">
+                                <input type="radio" id="na" name="radome">
+                                <label for="na">N/A</label>                                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="brief-bottom-container" style="padding-left: 20px; display:flex; justify-content:space-between">
+            <button class="cta-btn alt">
+                BACK TO BRIEF
+            </button>
+            <button class="cta-btn alt">
+                NEXT TO DRONE
+            </button>
+        </div>
+    </div>
+    
+   
+</body>
+</html>
