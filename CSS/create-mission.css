@@ -176,6 +176,8 @@ button span {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 20px;
+    margin-bottom: -20px;
 }
 
   .open-title {
@@ -183,7 +185,8 @@ button span {
     font-family: 'Roboto', 'Sans-serif';
     padding-left: 61px;
     padding-bottom: 5px;
-    margin: 0;
+    margin-bottom: -20px;
+    margin-top: 20px;
   }
 
 .recent-container {
@@ -235,6 +238,7 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 20px;
 }
 
 .files-container {
@@ -290,3 +294,35 @@ input {
     margin-right: 5px;
 }
 
+.cta-btn.alt  {
+    background-color: #292929;
+    width: fit-content;
+    color: #0D76BD;
+    text-align: center;
+    padding: 7px 15px 7px 15px;
+    margin-bottom: 10px;
+    font-family: 'roboto';
+    font-weight: 500;
+    border: 1px solid #757575;
+    border-radius: 5px;
+    display: flex;
+}
+
+.open-bottom-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 55px;
+    justify-content: space-between;
+}
+
+.left-btn-container {
+    margin-left: 17px;
+}
+
+.right-btn2 {
+    margin-right: 17px;
+}
+
+.right-btn1 {
+    margin-right: -150px;
+}
