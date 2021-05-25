@@ -113,7 +113,7 @@ button span {
     color: #a1a1a1;
 }
 
-.dashboard .material-icons.md-light { 
+.dashboard .material-icons.md-light {
     color: rgba(255, 255, 255, 1);
     cursor: pointer;
 }
@@ -173,7 +173,7 @@ button span {
     box-shadow: 0 3px 3px 0 #1b1b1b;
     margin: 0;
 }
-  
+
 .tab-btn {
     background-color: #292929;
     color: #757575;
@@ -185,7 +185,7 @@ button span {
     padding: 10px;
     margin-bottom: 0 !important;
 }
-  
+
 .tab-btn.selected {
     color: #0D76BD;
     border-bottom: solid 2px #0D76BD;
@@ -223,4 +223,8 @@ button span {
 
 .clear-list-warning button {
     padding: 7px 15px;
+}
+
+.icon:hover {
+  cursor: pointer;
 }

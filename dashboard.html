@@ -8,8 +8,12 @@
     <link rel="stylesheet" href="CSS/create-mission.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <script src="./scripts/dashboard.js" defer></script>
+<<<<<<< Updated upstream
     <script src="./scripts/mads.js" defer></script>
     <script src="./scripts/cecilie.js" defer></script>
+=======
+    <script src="./scripts/alexander.js" defer></script>
+>>>>>>> Stashed changes
     <title>Dashboard</title>
 </head>
 <body>
@@ -50,7 +54,7 @@
 
                 </div>
                 <div class="mission-list" id="mission-list">
-    
+
                 </div>
 
                 <button class="btn special-padding" id="clear-list">
@@ -63,7 +67,7 @@
             </div>
             <div class="operation-area-container">
                 <div class="cta-container">
-                    <button class="cta-btn">
+                    <button class="cta-btn" id="create-mission-menu">
                         <span class="material-icons">add</span>
                         CREATE NEW MISSION
                     </button>
@@ -71,7 +75,7 @@
                         <span class="material-icons">note_add</span>
                         CREATE MISSION FROM TEMPLATE
                     </button>
-                    <button class="cta-btn">
+                    <button class="cta-btn" id="open-mission">
                         <span class="material-icons">folder_open</span>
                         OPEN MISSION
                     </button>
@@ -82,7 +86,7 @@
                     <button class="tab-btn">PLOT</button>
                 </div>
             </div>
-            
+
             <div class="clear-list-warning" id="clear-list-warning" style="display: none;">
                 <h3>Confirm action:</h3>
                 <h2>"Clear list"</h2>
@@ -95,15 +99,19 @@
 
         </div>
 
+<<<<<<< Updated upstream
         <div class="modal" style="display: none;">
+=======
+        <div class="modal" style="display: none;" id="create-mission-modal">
+>>>>>>> Stashed changes
             <!-- Brief modal -->
             <div class="brief-container" id="brief-modal" style="display: block;">
                 <div class="icon">
-                    <img class="close-btn" src="../img/exit.png" alt="This is a closing icon">
+                    <img class="close-btn" src="./img/exit.png" alt="This is a closing icon" id="close-btn-id">
                 </div>
                 <div class="brief-top">
                     <div class="create-mission">
-                        <img src="../img/emblem-hvid.png" alt="This is a logo">
+                        <img src="./img/emblem-hvid.png" alt="This is a logo">
                         <h2>Creating mission...</h2>
                     </div>
                 </div>
@@ -194,7 +202,7 @@
                                     </div>
                                     <div class="option">
                                         <input type="radio" id="horizontal" name="polarization">
-                                        <label for="horizontal">Horizontal</label>                
+                                        <label for="horizontal">Horizontal</label>
                                     </div>
                                 </div>
                             </div>
@@ -207,11 +215,11 @@
                                     </div>
                                     <div class="option">
                                         <input type="radio" id="off" name="radome">
-                                        <label for="off">Off</label>                
+                                        <label for="off">Off</label>
                                     </div>
                                     <div class="option">
                                         <input type="radio" id="na" name="radome">
-                                        <label for="na">N/A</label>                                                
+                                        <label for="na">N/A</label>
                                     </div>
                                 </div>
                             </div>
@@ -261,11 +269,92 @@
                     <button class="cta-btn">
                         CREATE MISSION
                     </button>
-        
+
                 </div>
             </div>
-        
-            
+
+
+        </div>
+
+
+        <div class="brief-container">
+            <div class="brief-top">
+                <div class="create-mission">
+                    <img src="./img/emblem-hvid.png" alt="This is a logo">
+                    <h2>Opening mission...</h2>
+                </div>
+                <div class="icon">
+                    <img class="close-btn" src="./img/exit.png" alt="This is a closing icon">
+                </div>
+            </div>
+            <h2 class="open-title">Recent</h2>
+            <div class="open-middle-container1">
+                <div class="recent-container">
+                    <div class="mission-container1">
+                        <div class="text-area">
+                            <h4>Mission example 1</h4>
+                            <p>Last visited: 01-01-2020</p>
+                            <p>Created: 01-01-2020</p>
+                        </div>
+                        <input type="checkbox" class="checkbox-open">
+                    </div>
+                    <div class="mission-container2">
+                        <div class="text-area">
+                            <h4>Mission example 2</h4>
+                            <p>Last visited: 01-01-2020</p>
+                            <p>Created: 01-01-2020</p>
+                        </div>
+                        <input type="checkbox" class="checkbox-open">
+                    </div>
+                </div>
+            </div>
+            <h2 class="open-title">Open</h2>
+            <div class="open-middle-container2">
+                    <div class="files-container">
+                        <div class="title-container">
+                            <p>Name</p>
+                            <p id="visited">Last visited</p>
+                            <p id="created">Created</p>
+                        </div>
+                        <div class="mission-container3">
+                            <div class="mission-checkbox-container">
+                                <input type="checkbox">
+                                <input type="checkbox">
+                                <input type="checkbox">
+                                <input type="checkbox">
+                            </div>
+                            <div class="mission-text-container">
+                                <p class="files-text">Mission example 1</p>
+                                <p class="files-text">Mission example 2</p>
+                                <p class="files-text">Mission example 3</p>
+                                <p class="files-text">Mission example 4</p>
+                            </div>
+                            <div class="mission-visited-container">
+                                <p class="files-text">01-01-2020</p>
+                                <p class="files-text">01-01-2020</p>
+                                <p class="files-text">01-01-2020</p>
+                                <p class="files-text">01-01-2020</p>
+                            </div>
+                            <div class="mission-created-container">
+                                <p class="files-text">01-01-2020</p>
+                                <p class="files-text">01-01-2020</p>
+                                <p class="files-text">01-01-2020</p>
+                                <p class="files-text">01-01-2020</p>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div class="open-bottom-container">
+                <div class="left-btn-container">
+                    <button class="cta-btn alt">CANCEL</button>
+                </div>
+                <div class="right-btn1">
+                    <button class="cta-btn">CREATE, COPY AND EDIT</button>
+                </div>
+                <div class="right-btn2">
+                <button class="cta-btn">OPEN SELECTED</button>
+                </div>
+            </div>
         </div>
     </main>
 
