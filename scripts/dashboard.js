@@ -27,7 +27,7 @@ function createMission() {
         mission_list.innerHTML = '';
 
         let missionArr = ['UCL', 'Test flight', 'Hong Kong'];
-        
+
         for (i = 0; i < missionArr.length; i++) {
             let mission = document.createElement('p');
             mission.classList.add('mission');
@@ -37,7 +37,7 @@ function createMission() {
         }
     } else {
         let missionArr = ['UCL', 'Test flight', 'Hong Kong'];
-        
+
         for (i = 0; i < missionArr.length; i++) {
             let mission = document.createElement('p');
             mission.classList.add('mission');
