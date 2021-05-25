@@ -1,6 +1,6 @@
 console.log("dashboard.js is running...");
 
-// Alexander - menu til brief
+// Alexander - menu til brief og Cecilie input til brief 
 const mission_container = document.getElementById('create-mission-modal');
 const create_mission_btn = document.getElementById('create-mission-menu');
 const cancel_mission_btn = document.getElementById('close-btn-id');
@@ -8,6 +8,8 @@ const cancel_mission_btn2 = document.getElementById('close-btn-id2');
 const cancel_mission_btn3 = document.getElementById('close-btn-id3');
 const cancel_mission_btn4 = document.getElementById('close-btn-id4');
 const cancel_mission_btn5 = document.getElementById('close-btn-id5');
+const open_mission_btn = document.getElementById('open-mission');
+const brief_input = document.getElementById('brief-input');
 
 
 function createMission() {
@@ -23,6 +25,29 @@ function cancelMission() {
 }
 
 
+function openMission() {
+  console.log("hej");
+}
+
+//Brief input felt generering starter her - Cecilie
+
+console.log(brief_input);
+
+function briefInput() {
+    brief_input.innerHTML = '';
+
+    let briefArr = ['Title', 'Operator', 'Location', 'Date - dd.mm.yyyy'];
+
+    for(let i = 0; i < briefArr.length; i++) {
+        let input = document.createElement('input');
+        input.setAttribute('class', 'brief-box');
+        input.setAttribute('placeholder', briefArr[i])
+        brief_input.appendChild(input);
+    }
+
+}
+
+create_mission_btn.addEventListener('click', briefInput);
 create_mission_btn.addEventListener('click', createMission);
 cancel_mission_btn.addEventListener('click', cancelMission);
 cancel_mission_btn2.addEventListener('click', cancelMission);
@@ -36,15 +61,33 @@ const next_antenna = document.getElementById('next-to-antenna');
 const brief_modal = document.getElementById('brief-modal');
 const back_brief = document.getElementById('back-to-brief');
 
+const title = document.getElementById('title');
+
+// console.log(title);
+// console.log(title.value);
+
 function openAntenna() {
- antenna_modal.style.display = "block";
- brief_modal.style.display = "none";
+    if (title.value ==='') {
+        alert (title.value);
+      }
+      else {
+        antenna_modal.style.display = "block";
+        brief_modal.style.display = "none";
+      }
+
+
+    // if (validateTitle() === true) {
+    //     antenna_modal.style.display = "block";
+    //     brief_modal.style.display = "none";
+    // }
+ 
 }
 
 function toBrief() {
     antenna_modal.style.display = "none";
     brief_modal.style.display = "block";
 }
+
 
 next_antenna.addEventListener('click', openAntenna);
 back_brief.addEventListener('click', toBrief);
