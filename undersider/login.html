@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="../CSS/login.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="../scripts/dashboard.js" defer></script>
     <title>QuadSAT - login</title>
   </head>
   <body>
@@ -17,12 +18,14 @@
 
 
           <div class="form-container">
-            <form class="login-form" action="index.html" method="post">
+            <div class="input-container">
+            <form class="login-form" action="index.html" method="post" id="login_form">
               <input class="input-box" id="username" type="text" name="" value="" placeholder="Username">
               <input class="input-box" id="password" type="password" name="" value="" placeholder="Password">
+            </div>
               <div>
                 <label for="">Forgot password?</label>
-                <button class="cta-btn" type="submit"><a href="../dashboard.html">LOGIN</a> </button>
+                <button class="cta-btn" id="input-btn-login"type="submit"><a href="../dashboard.html" onclick="loginLink">LOGIN</a> </button>
               </div>
             </form>
           </div>
