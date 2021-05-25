@@ -184,6 +184,7 @@ button span {
     border: none;
     padding: 10px;
     margin-bottom: 0 !important;
+    cursor: auto !important;
 }
 
 .tab-btn.selected {
@@ -227,4 +228,21 @@ button span {
 
 .icon:hover {
   cursor: pointer;
+}
+
+.mediaquery {
+    display: none;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding: 50px;
+}
+
+@media only screen and (max-width: 700px) {
+    .mediaquery {
+        display: block;
+    }
 }

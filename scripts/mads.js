@@ -15,12 +15,12 @@ function nextToDrone() {
 
     let droneArr = ['Drone', 'Payload', 'Connection status: connected'];
 
-    // for(let i = 0; i < droneArr.length; i++) {
-    //     let input = document.createElement('input');
-    //     input.setAttribute('class', 'brief-box');
-    //     input.setAttribute('placeholder', droneArr[i])
-    //     drone_input.appendChild(input);
-    // }
+    for(let i = 0; i < droneArr.length; i++) {
+        let input = document.createElement('input');
+        input.setAttribute('class', 'brief-box');
+        input.setAttribute('placeholder', droneArr[i])
+        drone_input.appendChild(input);
+    }
 
     drone_modal.style.display = 'block';
 }

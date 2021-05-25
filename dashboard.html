@@ -39,7 +39,7 @@
                         CREATE NEW MISSION
                     </button>
                     <div>
-                        <button class="cta-btn special-padding">
+                        <button class="cta-btn special-padding" id="open-mission-sidebar">
                             <span class="material-icons">folder_open</span>
                             OPEN MISSIONS
                         </button>
@@ -68,7 +68,7 @@
                         <span class="material-icons">add</span>
                         CREATE NEW MISSION
                     </button>
-                    <button class="cta-btn">
+                    <button class="cta-btn" id="create-template">
                         <span class="material-icons">note_add</span>
                         CREATE MISSION FROM TEMPLATE
                     </button>
@@ -266,11 +266,8 @@
                 </div>
             </div>
 
-
-        </div>
-
-        <!-- Open mission modal -->
-        <div class="brief-container" style="display: none;">
+             <!-- Open mission modal -->
+            <div class="brief-container" id="open-mission-modal" style="display: none;">
             <div class="brief-top">
                 <div class="create-mission">
                     <img src="./img/emblem-hvid.png" alt="This is a logo">
@@ -339,7 +336,7 @@
             </div>
             <div class="open-bottom-container">
                 <div class="left-btn-container">
-                    <button class="cta-btn alt">CANCEL</button>
+                    <button class="cta-btn alt" id="close-btn-id5">CANCEL</button>
                 </div>
                 <div class="right-btn1">
                     <button class="cta-btn">CREATE, COPY AND EDIT</button>
@@ -349,7 +346,13 @@
                 </div>
             </div>
         </div>
+
+        </div>
     </main>
+
+    <div class="mediaquery">
+        <h1>Denne løsning er ikke optimeret til mobil eller tablet. <br> <br> Benyt venligst en computer </h1>
+    </div>
 
 </body>
 </html>

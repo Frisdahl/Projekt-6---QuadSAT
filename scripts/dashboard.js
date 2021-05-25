@@ -7,7 +7,7 @@ const cancel_mission_btn = document.getElementById('close-btn-id');
 const cancel_mission_btn2 = document.getElementById('close-btn-id2');
 const cancel_mission_btn3 = document.getElementById('close-btn-id3');
 const cancel_mission_btn4 = document.getElementById('close-btn-id4');
-const open_mission_btn = document.getElementById('open-mission');
+const cancel_mission_btn5 = document.getElementById('close-btn-id5');
 
 
 function createMission() {
@@ -15,15 +15,11 @@ function createMission() {
     brief_modal.style.display = 'block';
     antenna_modal.style.display = 'none';
     drone_modal.style.display = 'none';
+    open_mission_modal.style.display = 'none';
 }
 
 function cancelMission() {
   mission_container.style.display = "none";
-}
-
-
-function openMission() {
-  console.log("hej");
 }
 
 
@@ -32,7 +28,7 @@ cancel_mission_btn.addEventListener('click', cancelMission);
 cancel_mission_btn2.addEventListener('click', cancelMission);
 cancel_mission_btn3.addEventListener('click', cancelMission);
 cancel_mission_btn4.addEventListener('click', cancelMission);
-open_mission_btn.addEventListener('click', openMission);
+cancel_mission_btn5.addEventListener('click', cancelMission);
 
 // Cecilie - brief til antenna
 const antenna_modal = document.getElementById('antenna-modal');
@@ -58,8 +54,8 @@ const next_to_drone = document.getElementById('next-to-drone');
 const back_to_antenna = document.getElementById('back-to-antenna');
 const drone_modal = document.getElementById('drone-modal');
 const drone_input = document.getElementById('drone-input');
-
-console.log(drone_input);
+const open_mission_btn = document.getElementById('open-mission');
+const open_mission_modal = document.getElementById('open-mission-modal');
 
 function nextToDrone() {
     antenna_modal.style.display = 'none';
@@ -83,10 +79,17 @@ function backToAntenna() {
     antenna_modal.style.display = 'block';
 }
 
-
+function openMission() {
+    mission_container.style.display = 'block';
+    open_mission_modal.style.display = 'block';
+    brief_modal.style.display = 'none';
+    antenna_modal.style.display = 'none';
+    drone_modal.style.display = 'none';
+}
 
 next_to_drone.addEventListener('click', nextToDrone);
 back_to_antenna.addEventListener('click', backToAntenna);
+open_mission_btn.addEventListener('click', openMission);
 
 // Sidebar functions
 const clear_btn = document.getElementById('clear-list');
@@ -94,6 +97,7 @@ const clear_list_warning = document.getElementById('clear-list-warning');
 const cancel_clear = document.getElementById('cancel-clear');
 const confirm_clear = document.getElementById('confirm-clear');
 const create_mission_sidebar = document.getElementById('create-mission-sidebar');
+const open_mission_sidebar = document.getElementById('open-mission-sidebar');
 const mission_list = document.getElementById('mission-list');
 
 function clearList() {
@@ -111,18 +115,8 @@ function confirmClear() {
 }
 
 function createMissionSidebar() {
-    if(mission_list.innerHTML !== '') {
-        mission_list.innerHTML = '';
-
-        let missionArr = ['UCL', 'Test flight', 'Hong Kong'];
-
-        for (i = 0; i < missionArr.length; i++) {
-            let mission = document.createElement('p');
-            mission.classList.add('mission');
-            mission.id = 'mission' + i;
-            mission.innerText = missionArr[i];
-            mission_list.appendChild(mission);
-        }
+    if(mission_list.innerText !== '') {
+        alert('You have already created some mission files. Please clear list.');
     } else {
         let missionArr = ['UCL', 'Test flight', 'Hong Kong'];
 
@@ -139,7 +133,8 @@ function createMissionSidebar() {
 clear_btn.addEventListener('click', clearList);
 cancel_clear.addEventListener('click', cancelClear);
 confirm_clear.addEventListener('click', confirmClear);
-create_mission_sidebar.addEventListener('click', createMissionSidebar);
+create_mission_sidebar.addEventListener('click', createMission);
+open_mission_sidebar.addEventListener('click', openMission);
 
 
 
@@ -150,9 +145,11 @@ const account = document.getElementById('account');
 const search = document.getElementById('search');
 const remove_mission = document.getElementById('remove-missions');
 const search_mission = document.getElementById('search-missions');
+const create_template = document.getElementById('create-template');
 
 settings.addEventListener('click', () => {alert('Settings to be implemented later')});
 account.addEventListener('click', () => {alert('Account box to be implemented later')});
 search.addEventListener('click', () => {alert('search functionality to be implemented later')});
 remove_mission.addEventListener('click', () => {alert('remove functionality to be implemented later')});
 search_mission.addEventListener('click', () => {alert('search functionality to be implemented later')});
+create_template.addEventListener('click', () => {alert('template functionality to be implemented later')});
