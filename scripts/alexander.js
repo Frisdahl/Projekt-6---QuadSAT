@@ -3,7 +3,6 @@ const create_mission_btn = document.getElementById('create-mission-menu');
 const cancel_mission_btn = document.getElementById('close-btn-id');
 const open_mission_btn = document.getElementById('open-mission');
 
-console.log(mission_container);
 
 function createMission() {
     mission_container.style.display = "block";

@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="CSS/create-mission.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <script src="./scripts/dashboard.js" defer></script>
-    <script src="./scripts/mads.js" defer></script>
+    <!-- <script src="./scripts/mads.js" defer></script>
     <script src="./scripts/cecilie.js" defer></script>
-    <script src="./scripts/alexander.js" defer></script>
+    <script src="./scripts/alexander.js" defer></script> -->
     <title>Dashboard</title>
 </head>
 <body>
@@ -139,7 +139,7 @@
                         <h2>Creating mission...</h2>
                     </div>
                     <div class="icon">
-                        <img class="close-btn" src="../img/exit.png" alt="This is a closing icon">
+                        <img class="close-btn" src="../img/exit.png" alt="This is a closing icon" id="close-btn-id2">
                     </div>
                 </div>
                 <div class="modal-title">
@@ -232,7 +232,7 @@
             <!-- Drone modalen -->
             <div class="brief-container" id="drone-modal" style="display: none;">
                 <div class="icon">
-                    <img class="close-btn" src="../img/exit.png" alt="This is a closing icon">
+                    <img class="close-btn" src="../img/exit.png" alt="This is a closing icon" id="close-btn-id3">
                 </div>
                 <div class="brief-top">
                     <div class="create-mission">
@@ -270,14 +270,14 @@
         </div>
 
         <!-- Open mission modal -->
-        <div class="brief-container">
+        <div class="brief-container" style="display: none;">
             <div class="brief-top">
                 <div class="create-mission">
                     <img src="./img/emblem-hvid.png" alt="This is a logo">
                     <h2>Opening mission...</h2>
                 </div>
                 <div class="icon">
-                    <img class="close-btn" src="./img/exit.png" alt="This is a closing icon">
+                    <img class="close-btn" src="./img/exit.png" alt="This is a closing icon" id="close-btn-id4">
                 </div>
             </div>
             <h2 class="open-title">Recent</h2>

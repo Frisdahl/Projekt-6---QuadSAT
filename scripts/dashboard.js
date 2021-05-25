@@ -1,5 +1,94 @@
 console.log("dashboard.js is running...");
 
+// Alexander - menu til brief
+const mission_container = document.getElementById('create-mission-modal');
+const create_mission_btn = document.getElementById('create-mission-menu');
+const cancel_mission_btn = document.getElementById('close-btn-id');
+const cancel_mission_btn2 = document.getElementById('close-btn-id2');
+const cancel_mission_btn3 = document.getElementById('close-btn-id3');
+const cancel_mission_btn4 = document.getElementById('close-btn-id4');
+const open_mission_btn = document.getElementById('open-mission');
+
+
+function createMission() {
+    mission_container.style.display = "block";
+    brief_modal.style.display = 'block';
+    antenna_modal.style.display = 'none';
+    drone_modal.style.display = 'none';
+}
+
+function cancelMission() {
+  mission_container.style.display = "none";
+}
+
+
+function openMission() {
+  console.log("hej");
+}
+
+
+create_mission_btn.addEventListener('click', createMission);
+cancel_mission_btn.addEventListener('click', cancelMission);
+cancel_mission_btn2.addEventListener('click', cancelMission);
+cancel_mission_btn3.addEventListener('click', cancelMission);
+cancel_mission_btn4.addEventListener('click', cancelMission);
+open_mission_btn.addEventListener('click', openMission);
+
+// Cecilie - brief til antenna
+const antenna_modal = document.getElementById('antenna-modal');
+const next_antenna = document.getElementById('next-to-antenna');
+const brief_modal = document.getElementById('brief-modal');
+const back_brief = document.getElementById('back-to-brief');
+
+function openAntenna() {
+ antenna_modal.style.display = "block";
+ brief_modal.style.display = "none";
+}
+
+function toBrief() {
+    antenna_modal.style.display = "none";
+    brief_modal.style.display = "block";
+}
+
+next_antenna.addEventListener('click', openAntenna);
+back_brief.addEventListener('click', toBrief);
+
+// Mads - antenna til drone
+const next_to_drone = document.getElementById('next-to-drone');
+const back_to_antenna = document.getElementById('back-to-antenna');
+const drone_modal = document.getElementById('drone-modal');
+const drone_input = document.getElementById('drone-input');
+
+console.log(drone_input);
+
+function nextToDrone() {
+    antenna_modal.style.display = 'none';
+
+    drone_input.innerHTML = '';
+
+    let droneArr = ['Drone', 'Payload', 'Connection status: connected'];
+
+    for(let i = 0; i < droneArr.length; i++) {
+        let input = document.createElement('input');
+        input.setAttribute('class', 'brief-box');
+        input.setAttribute('placeholder', droneArr[i])
+        drone_input.appendChild(input);
+    }
+
+    drone_modal.style.display = 'block';
+}
+
+function backToAntenna() {
+    drone_modal.style.display = 'none';
+    antenna_modal.style.display = 'block';
+}
+
+
+
+next_to_drone.addEventListener('click', nextToDrone);
+back_to_antenna.addEventListener('click', backToAntenna);
+
+// Sidebar functions
 const clear_btn = document.getElementById('clear-list');
 const clear_list_warning = document.getElementById('clear-list-warning');
 const cancel_clear = document.getElementById('cancel-clear');
@@ -21,7 +110,7 @@ function confirmClear() {
     clear_list_warning.style.display = "none";
 }
 
-function createMission() {
+function createMissionSidebar() {
     if(mission_list.innerHTML !== '') {
         mission_list.innerHTML = '';
 
@@ -50,7 +139,7 @@ function createMission() {
 clear_btn.addEventListener('click', clearList);
 cancel_clear.addEventListener('click', cancelClear);
 confirm_clear.addEventListener('click', confirmClear);
-create_mission_sidebar.addEventListener('click', createMission);
+create_mission_sidebar.addEventListener('click', createMissionSidebar);
 
 
 
