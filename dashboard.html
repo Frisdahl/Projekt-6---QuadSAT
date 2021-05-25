@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="CSS/create-mission.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <script src="./scripts/dashboard.js" defer></script>
+    <script src="./scripts/mads.js" defer></script>
     <title>Dashboard</title>
 </head>
 <body>
@@ -93,7 +94,7 @@
 
         </div>
 
-        <div class="modal" style="display: block;">
+        <div class="modal" style="display: none;">
             <!-- Brief modal -->
             <div class="brief-container" id="brief-modal" style="display: block;">
                 <div class="icon">
@@ -129,7 +130,7 @@
             </div>
 
             <!-- Antenna modal -->
-            <div class="brief-container" id="antenna-modal" style="display: none;">
+            <div class="brief-container" id="antenna-modal" style="display: block;">
                 <div class="brief-top">
                     <div class="create-mission">
                         <img src="../img/emblem-hvid.png" alt="This is a logo">
@@ -220,7 +221,7 @@
                     <button class="cta-btn alt">
                         BACK TO BRIEF
                     </button>
-                    <button class="cta-btn alt">
+                    <button class="cta-btn alt" id="next-to-drone">
                         NEXT TO DRONE
                     </button>
                 </div>
@@ -247,13 +248,16 @@
                         <button class="tab-btn selected">DRONE</button>
                     </div>
                 </div>
-                <div class="briefinput">
-                    <input class="brief-box" id="title" type="text" placeholder="Drone">
-                    <input class="brief-box" id="operator" type="text" placeholder="Payload">
-                    <input class="brief-box" id="location" type="text" placeholder="Connection status: Connected">
+                <div class="briefinput" id="drone-input">
+                    <input class="brief-box" id="drone" type="text" placeholder="Drone">
+                    <input class="brief-box" id="payload" type="text" placeholder="Payload">
+                    <input class="brief-box" id="connection" type="text" placeholder="Connection status: Connected">
                 </div>
-                <div class="brief-bottom-container">
-                    <button class="cta-btn alt">
+                <div class="brief-bottom-container" style="padding-left: 20px; display:flex; justify-content:space-between">
+                    <button class="cta-btn alt" id="back-to-antenna">
+                        BACK TO ANTENNA
+                    </button>
+                    <button class="cta-btn">
                         CREATE MISSION
                     </button>
         

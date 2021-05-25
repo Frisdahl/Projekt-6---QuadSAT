@@ -19,7 +19,6 @@ function confirmClear() {
     mission_list.innerHTML = '';
 
     clear_list_warning.style.display = "none";
-
 }
 
 function createMission() {
