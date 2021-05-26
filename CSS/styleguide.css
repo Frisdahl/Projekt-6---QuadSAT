@@ -16,6 +16,7 @@ body {
 }
 
 main {
+  margin: 0px 0px 0px 50px;
   padding: 40px;
   position: absolute;
   left: 200px;
@@ -24,6 +25,11 @@ main {
   top: 0;
   display: flex;
   flex-direction: column;
+}
+
+
+.informerende-tekst {
+  margin-top: 20px;
 }
 
 .snippet {
@@ -122,6 +128,7 @@ h1 {
 
 h2 {
   font-size: 60px;
+  color: #292929;
 }
 
 h3 {
@@ -205,8 +212,78 @@ button span {
   border-bottom: solid 2px #0D76BD;
 }
 
-/* Farver */
+/* dette er starten på Farver */
+
 :root {
   --blue: #0D76BD;
   --surface: rgba(255,255,255,0.11);
+}
+
+.farve-container {
+  margin-top: 50px;
+  width: 80%;
+  height: 100%;
+}
+
+.primær-farve-container {
+  display: flex;
+  justify-content: left;
+}
+
+.sekundær-farve-container {
+  display: flex;
+  justify-content: left;
+}
+
+.card-container {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 200px;
+  width: 200px;
+  background-color: #f3f3f3;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  margin: 25px;
+}
+
+.farve {
+  width: 180px;
+  height: 110px;
+  background-color: #0D76BD;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+#grå-primær {
+  background-color: #58585a;
+}
+
+#hvid {
+  background-color: #ffffff;
+}
+
+#sort {
+  background-color: #121212;
+}
+
+#grå-sekundær {
+  background-color: #5F5F5F;
+}
+
+.text-farve-container {
+  margin-bottom: 10px;
+}
+
+.h5-farve-tekst {
+  margin-top: 10px;
+}
+
+
+.card-container:hover {
+  transform: scale(1.2);
+  transition: 0.2s;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
