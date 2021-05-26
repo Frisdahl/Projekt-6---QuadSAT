@@ -128,7 +128,7 @@ h1 {
 }
 
 h2 {
-  font-size: 60px;
+  font-size: 24px;
   color: #292929;
 }
 
@@ -297,3 +297,19 @@ button span {
 }
 
 /* Dette er slutten på farvesektion */
+
+/* Dette er starten på typografi */
+
+.headline2-titel {
+  display: flex;
+}
+
+.headline-eksempel {
+  width: 400px;
+  height: 200px;
+  border: 2px solid #0D76BD;
+}
+
+.headline-informerende-tekst {
+  opacity: 50%;
+}
