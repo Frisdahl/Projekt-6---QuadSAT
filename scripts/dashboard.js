@@ -1,26 +1,28 @@
 console.log("dashboard.js is running...");
 
 
-// // alexander - login
-//     login_form.innerHTML = '';
+// alexander - login
 
-//     let loginarr = ['username', 'password'];
+     login_form = getElementById('login-form');
+    login_form.innerHTML = '';
 
-//     for(let i = 0; i < loginarr.length; i++) {
-//         let input = document.createElement('input');
-//         input.setAttribute('class', 'input-box');
-//         input.setAttribute('placeholder', loginarr[i])
-//         login_form.appendChild(input);
-//     }
+    let loginarr = ['username', 'password'];
 
-// let input_username = document.getElementById('username');
-// let input_btn_login = document.getElementById('input-btn-login');
+    for(let i = 0; i < loginarr.length; i++) {
+        let input = document.createElement('input');
+        input.setAttribute('class', 'input-box');
+        input.setAttribute('placeholder', loginarr[i])
+        login_form.appendChild(input);
+    }
 
-// function loginLink() {
-//   if(input_username.value == "Alexander") {
-//     alert("velkommen Alexander");
-//   }
-// }
+let input_username = document.getElementById('username');
+let input_btn_login = document.getElementById('input-btn-login');
+
+function loginLink() {
+  if(input_username.value == "Alexander") {
+    alert("velkommen Alexander");
+  }
+}
 
 
 // input_btn_login.addEventListener('click', loginLink);
