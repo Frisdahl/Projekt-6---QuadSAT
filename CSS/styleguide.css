@@ -212,7 +212,7 @@ button span {
   border-bottom: solid 2px #0D76BD;
 }
 
-/* dette er starten på Farver */
+/* dette er starten på farvesektion */
 
 :root {
   --blue: #0D76BD;
@@ -287,3 +287,5 @@ button span {
   transition: 0.2s;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
+
+/* Dette er slutten på farvesektion */
