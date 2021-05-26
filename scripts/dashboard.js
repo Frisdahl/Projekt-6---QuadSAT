@@ -1,29 +1,29 @@
 console.log("dashboard.js is running...");
 
 
-// alexander - login
-    login_form.innerHTML = '';
+// // alexander - login
+//     login_form.innerHTML = '';
 
-    let loginarr = ['username', 'password'];
+//     let loginarr = ['username', 'password'];
 
-    for(let i = 0; i < loginarr.length; i++) {
-        let input = document.createElement('input');
-        input.setAttribute('class', 'input-box');
-        input.setAttribute('placeholder', loginarr[i])
-        login_form.appendChild(input);
-    }
+//     for(let i = 0; i < loginarr.length; i++) {
+//         let input = document.createElement('input');
+//         input.setAttribute('class', 'input-box');
+//         input.setAttribute('placeholder', loginarr[i])
+//         login_form.appendChild(input);
+//     }
 
-let input_username = document.getElementById('username');
-let input_btn_login = document.getElementById('input-btn-login');
+// let input_username = document.getElementById('username');
+// let input_btn_login = document.getElementById('input-btn-login');
 
-function loginLink() {
-  if(input_username.value == "Alexander") {
-    alert("velkommen Alexander");
-  }
-}
+// function loginLink() {
+//   if(input_username.value == "Alexander") {
+//     alert("velkommen Alexander");
+//   }
+// }
 
 
-input_btn_login.addEventListener('click', loginLink);
+// input_btn_login.addEventListener('click', loginLink);
 
 
 
@@ -141,7 +141,7 @@ const next_to_drone = document.getElementById('next-to-drone');
 const back_to_antenna = document.getElementById('back-to-antenna');
 const drone_modal = document.getElementById('drone-modal');
 const drone_input = document.getElementById('drone-input');
-const open_mission_btn = document.getElementById('open-mission');
+// const open_mission_btn = document.getElementById('open-mission');
 const open_mission_modal = document.getElementById('open-mission-modal');
 
 function nextToDrone() {
