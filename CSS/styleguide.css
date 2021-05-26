@@ -128,7 +128,7 @@ h1 {
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 60px;
   color: #292929;
 }
 
@@ -303,7 +303,7 @@ button span {
 .flex-container {
   margin-top: 50px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 .typografi-information {
@@ -340,4 +340,12 @@ button span {
   top: 15px;
   left: 10px;
   color: #ffffff;
+}
+
+#h2-example {
+  font-size: 24px;
+}
+
+#h3-example {
+  font-size: 18px;
 }
