@@ -124,6 +124,7 @@ nav ul li:hover div {
 /* Typografi */
 h1 {
   font-size: 96px;
+  color: #292929;
 }
 
 h2 {
@@ -133,14 +134,21 @@ h2 {
 
 h3 {
   font-size: 48px;
+  color: #292929;
 }
 
 h4 {
   font-size: 34px;
+  color: #292929;
 }
 
 h5 {
   font-size: 24px;
+  color: #292929;
+}
+
+.h5-anvendelse {
+  margin-top: 25px;
 }
 
 /* Knapper */
