@@ -58,39 +58,44 @@ cancel_mission_btn5.addEventListener('click', cancelMission);
 
 // Cecilie - brief til antenna
 const antenna_modal = document.getElementById('antenna-modal');
-const next_antenna = document.getElementById('next-to-antenna');
+const to_antenna = document.getElementById('next-to-antenna');
 const brief_modal = document.getElementById('brief-modal');
 const back_brief = document.getElementById('back-to-brief');
 
 const title = document.getElementById('title');
 
-// console.log(title);
-// console.log(title.value);
+// // console.log(title);
+// // console.log(title.value);
 
-function openAntenna() {
-    if (title.value ==='') {
-        alert (title.value);
-      }
-      else {
-        antenna_modal.style.display = "block";
-        brief_modal.style.display = "none";
-      }
+// // function openAntenna() {
+// //     if (title.value ==='') {
+// //         alert (title.value);
+// //       }
+// //       else {
+// //         antenna_modal.style.display = "block";
+// //         brief_modal.style.display = "none";
+// //       }
 
 
-    // if (validateTitle() === true) {
-    //     antenna_modal.style.display = "block";
-    //     brief_modal.style.display = "none";
-    // }
+//     // if (validateTitle() === true) {
+//     //     antenna_modal.style.display = "block";
+//     //     brief_modal.style.display = "none";
+//     // }
 
-}
+// }
 
 function toBrief() {
     antenna_modal.style.display = "none";
     brief_modal.style.display = "block";
 }
 
+function toAntenna() {
+    antenna_modal.style.display = "block";
+    brief_modal.style.display = "none";
+}
 
-next_antenna.addEventListener('click', openAntenna);
+to_antenna.addEventListener('click', toAntenna);
+// to_antenna.addEventListener('click', openAntenna);
 back_brief.addEventListener('click', toBrief);
 
 // Mads - antenna til drone
