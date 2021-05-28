@@ -30,7 +30,7 @@ function openMission() {
   console.log("hej");
 }
 
-//Brief input felt generering starter her - Cecilie
+// Cecilie - brief inputfelt generering
 
 console.log(brief_input);
 
@@ -43,6 +43,7 @@ function briefInput() {
         let input = document.createElement('input');
         input.setAttribute('class', 'brief-box');
         input.setAttribute('placeholder', briefArr[i])
+        input.setAttribute('id', briefArr[i] )
         brief_input.appendChild(input);
     }
 
@@ -61,6 +62,7 @@ const antenna_modal = document.getElementById('antenna-modal');
 const to_antenna = document.getElementById('next-to-antenna');
 const brief_modal = document.getElementById('brief-modal');
 const back_brief = document.getElementById('back-to-brief');
+const brief_title = document.getElementById('title');
 
 const title = document.getElementById('title');
 
@@ -76,6 +78,7 @@ const title = document.getElementById('title');
 // //         brief_modal.style.display = "none";
 // //       }
 
+    // classlist.add
 
 //     // if (validateTitle() === true) {
 //     //     antenna_modal.style.display = "block";
