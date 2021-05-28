@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="../CSS/login.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <script src="../scripts/dashboard.js" defer></script>
+    <script src="../scripts/login.js" defer></script>
     <title>QuadSAT - login</title>
   </head>
   <body>
@@ -19,13 +19,15 @@
 
           <div class="form-container">
             <div class="input-container">
-            <form class="login-form" action="index.html" method="post" id="login_form">
+            <form class="login-form" action="index.html" method="post" id="login-form">
               <input class="input-box" id="username" type="text" name="" value="" placeholder="Username">
               <input class="input-box" id="password" type="password" name="" value="" placeholder="Password">
             </div>
               <div>
+                <a href="forgot-password.html">
                 <label for="">Forgot password?</label>
-                <button class="cta-btn" id="input-btn-login"type="submit"><a href="../dashboard.html" onclick="loginLink">LOGIN</a> </button>
+                </a>
+                <button class="cta-btn" id="input-btn-login" type="button"><a href="../dashboard.html" onclick="loginLink">LOGIN</a> </button>
               </div>
             </form>
           </div>
@@ -42,6 +44,70 @@
       <button class="transparent-btn" type="button" id="faq-btn" name="button">
         <span class="material-icons" id="faq-icon">help_outline</span>
       </button>
+
+
+
+
+
+
+
+      <div class="faq-container" id="faq" style="display:none">
+
+        <button type="button" onclick="closeFaq" class="transparent-btn" id="faq-cancel-btn" name="button">
+          <span class="material-icons">cancel</span>
+        </button>
+
+        <div class="blue-side">
+          <div class="faq-logo-container">
+            <img src="../img/hvid-logo.png" alt="">
+          </div>
+          <h3 id="faq-h3">FAQ</h3>
+        </div>
+
+      <div class="faq-all-icons-container">
+        <h4 id="faq-title-h4">Need some help?</h4>
+
+        <div class="faq-icon-container">
+          <a href="https://quadsat.com/about/management/">
+            <div class="faq-management-container">
+               <div class="mangement-img-container">
+                  <img src="../img/management.png" id="img-mangement" alt="">
+              </div>
+              <p id="sub-title">Management</p>
+            </div>
+          </a>
+
+        <a href="https://quadsat.com/about/investors/">
+          <div class="faq-investors-container">
+             <div class="mangement-img-container">
+                <img src="../img/investor.png" id="img-mangement" alt="">
+            </div>
+            <p id="sub-title">Investors</p>
+          </div>
+        </a>
+
+
+        <a href="https://quadsat.com/careers/">
+          <div class="faq-careers-container">
+             <div class="mangement-img-container">
+                <img src="../img/careers.png" id="img-mangement" alt="">
+            </div>
+            <p id="sub-title">Careers</p>
+          </div>
+        </a>
+
+
+        <a href="https://quadsat.com/about/contact/">
+          <div class="faq-contact-container">
+             <div class="mangement-img-container">
+                <img src="../img/contact.png" id="img-mangement" alt="">
+            </div>
+            <p id="sub-title">Contact</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
 
     </main>
 

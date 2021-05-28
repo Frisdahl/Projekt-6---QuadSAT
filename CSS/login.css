@@ -301,8 +301,9 @@ label {
   margin-top: 25px;
   width: 300px;
   height: 325px;
-  align-self: center;
-  margin-left: 85px;
+  position: absolute;
+  top: 25px;
+  left: 285px;
 }
 
 .faq-icon-container {

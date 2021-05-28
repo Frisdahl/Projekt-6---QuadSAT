@@ -17,7 +17,7 @@ body {
 
 main {
   margin: 0px 0px 0px 50px;
-  padding: 40px;
+  padding: 60px;
   position: absolute;
   left: 200px;
   right: 0;
@@ -143,7 +143,7 @@ h4 {
 }
 
 h5 {
-  font-size: 24px;
+  font-size: 20px;
   color: #292929;
 }
 
@@ -301,9 +301,9 @@ button span {
 /* Dette er starten på typografi */
 
 .flex-container {
-  margin-top: 50px;
   display: flex;
   justify-content: space-evenly;
+  margin-top: 50px;
 }
 
 .typografi-information {
@@ -348,4 +348,174 @@ button span {
 
 #h3-example {
   font-size: 18px;
+}
+
+/* Dette er starten på Ikoner */
+
+.ikon-container {
+  margin-top: 50px;
+  width: 80%;
+  height: 100%;
+}
+
+.ikon-card-container {
+  position: relative;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 200px;
+  width: 200px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  margin: 25px;
+}
+
+.ikon-card-container:hover {
+  transform: scale(1.2);
+  transition: 0.2s;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.ikon-name-container {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 25%;
+  background-color: #0D76BD;
+  opacity: 50%;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.ikon-names-ikoner {
+  color: white;
+  padding-top: 10px;
+}
+
+.ikon-anvendelse {
+  position: absolute;
+  bottom: 0px;
+  height: 15%;
+  width: 100%;
+  font-style: italic;
+  align-items: center;
+  line-height: 15%;
+}
+
+#ikon {
+  font-size: 60px;
+}
+
+/* Dette er slutten på Ikoner */
+
+/* Dette er starten på Billeder */
+
+.snippet-billeder {
+  background-color: skyblue;
+  color: black;
+  min-width: fit-content;
+  width: 20%;
+  margin-top: 5px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  display: flex;
+  justify-content: center;
+  }
+
+.flex-container-billeder {
+  display: flex;
+  justify-content: space-around;
+  justify-content: flex-start;
+}
+
+.faq-billeder {
+  height: 60px;
+  width: 60px;
+}
+
+.billede-card-container {
+  position: relative;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 200px;
+  width: 200px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  margin: 25px;
+}
+
+.logo-card-container {
+  position: relative;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 200px;
+  width: 200px;
+  background-color: #0D76BD;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  margin: 25px;
+  color: white;
+}
+
+.ikon-name-container-billeder {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 25%;
+  background-color: #0D76BD;
+  opacity: 50%;
+  border-radius: 5px 5px 0px 0px;
+  text-align: center;
+  line-height: 75%;
+}
+
+.ikon-names-billeder {
+  color: white;
+}
+
+.logo-card-container:hover {
+  transform: scale(1.2);
+  transition: 0.2s;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.logo-card-container h5 {
+  opacity: 100%;
+}
+
+.billeder-titel {
+  margin-top: 50px;
+}
+
+.logo-name-container-billeder {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 25%;
+  background-color: #0D76BD;
+  opacity: 100%;
+  border-radius: 5px 5px 0px 0px;
+  border-bottom: 1px solid white;
+  line-height: 75%;
+}
+
+#logo-hvid {
+  margin-top: 15px;
+  height: 80px;
+  width: 80px;
+}
+
+#quadsat-logo-hvid {
+  margin-top: 15px;
+  height: 80px;
+  width: 160px;
 }

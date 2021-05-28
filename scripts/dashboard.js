@@ -1,49 +1,6 @@
 console.log("dashboard.js is running...");
 
 
-// // alexander - login
-//     login_form.innerHTML = '';
-
-//     let loginarr = ['username', 'password'];
-
-//     for(let i = 0; i < loginarr.length; i++) {
-//         let input = document.createElement('input');
-//         input.setAttribute('class', 'input-box');
-//         input.setAttribute('placeholder', loginarr[i])
-//         login_form.appendChild(input);
-//     }
-
-// let input_username = document.getElementById('username');
-// let input_btn_login = document.getElementById('input-btn-login');
-
-// function loginLink() {
-//   if(input_username.value == "Alexander") {
-//     alert("velkommen Alexander");
-//   }
-// }
-
-
-// input_btn_login.addEventListener('click', loginLink);
-
-
-
-/*
-    let usernamearr = ['Mads', 'Cecilie', 'Anne', 'Alexander'];
-    let input_username = document.getElementById('username');
-
-    function login_link() {
-
-      for (let i = 0; i < usernamearr.length; i++) {
-
-        if (input_username.value == usernamearr[i]) {
-
-        }
-      }
-    }
-*/
-
-
-
 // Alexander - menu til brief
 const mission_container = document.getElementById('create-mission-modal');
 const create_mission_btn = document.getElementById('create-mission-menu');
