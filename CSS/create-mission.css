@@ -3,21 +3,25 @@
     padding: 0px;
     box-sizing: border-box;
 }
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
 
 /* Modalens indhold, herunder logo, luk knap og overskrift */
+.modal {
+    background-color: #0D76BD;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+}
+
 .brief-container {
     height: 550px;
     width: 600px;
     background-color: #2F2F2F;
     display: flex;
     flex-direction: column;
-    position: relative;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .brief-top {
@@ -44,7 +48,7 @@ body {
 .close-btn {
     height: 24px;
     width: 24px;
-    
+
 }
 
 h2 {
@@ -83,7 +87,7 @@ h3 {
     align-items: center;
     margin: 0;
   }
-  
+
   .tab-btn-container {
     display: flex;
     flex-direction: row;
@@ -102,7 +106,7 @@ h3 {
     border: none;
     padding: 10px;
   }
-  
+
   .tab-btn.selected {
     color: #0D76BD;
     border-bottom: solid 2px #0D76BD;
@@ -150,7 +154,7 @@ button span {
     border-radius: 5px;
     display: flex;
     align-items: center;
-    } 
+    }
 
 .brief-bottom-container {
     width: 100%;
@@ -161,8 +165,241 @@ button span {
     position: absolute;
     bottom: 0;
     padding-right: 20px;
+    padding: 10px;
+  }
+
+  .breadcrumbs-container {
+    color: #0D76BD;
+    border-bottom: solid 2px #0D76BD;
+  }
+
+
+/*Her starter open mission CSS - Bui */
+
+.open-middle-container1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: -20px;
 }
 
-/* slut på Brief */
-/* Start på Drone */
+  .open-title {
+    color: #E9E9E9;
+    font-family: 'Roboto', 'Sans-serif';
+    padding-left: 61px;
+    padding-bottom: 5px;
+    margin-bottom: -20px;
+    margin-top: 20px;
+  }
 
+.recent-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #5F5F5F;
+    height: 110px;
+    width: 475px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    margin-bottom: 20px;
+}
+
+
+h4 {
+    font-family: 'Roboto', 'Sans-serif';
+    color: #E9E9E9;
+    margin-top: 8px;
+}
+
+p {
+    font-family: 'Roboto', 'Sans-serif';
+    color: #CACACA;
+    font-size: 12px;
+    margin-top: 3px;
+
+}
+
+.mission-container1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #7B7B7B;
+    margin-left: 8px;
+    width: 200px;
+}
+
+.mission-container2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #7B7B7B;
+    width: 200px;
+    margin-right: 8px;
+}
+
+.open-middle-container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.files-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #5F5F5F;
+    height: 135px;
+    width: 475px;
+}
+
+.title-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 475px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 46px;
+}
+
+#visited {
+    margin-left: 25px;
+}
+
+#created {
+    margin-left: 10px;
+}
+
+.files-text {
+    margin: 8px;
+    font-size: 12px;
+}
+
+.mission-container3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 475px;
+}
+
+.mission-text-container {
+    margin-left: -75px;
+}
+
+.mission-checkbox-container {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5px;
+}
+
+input {
+    margin-top: 9px;
+    margin-left: -5px;
+    margin-right: 5px;
+}
+
+.cta-btn.alt  {
+    background-color: #292929;
+    width: fit-content;
+    color: #0D76BD;
+    text-align: center;
+    padding: 7px 15px 7px 15px;
+    margin-bottom: 10px;
+    font-family: 'roboto';
+    font-weight: 500;
+    border: 1px solid #757575;
+    border-radius: 5px;
+    display: flex;
+}
+
+.open-bottom-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 55px;
+    justify-content: space-between;
+}
+
+.left-btn-container {
+    margin-left: 17px;
+}
+
+.right-btn2 {
+    margin-right: 17px;
+}
+
+.right-btn1 {
+    margin-right: -150px;
+}
+
+
+/* Antenna modal */
+.antenna-input-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 5px;
+    padding: 0 40px;
+    margin-top: 20px;
+}
+
+.antenna-input-container .grid-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.antenna-input-container .grid-item .configuration {
+    position: relative;
+}
+
+.antenna-input-container .grid-item .configuration label {
+    background: #2f2f2f;
+    padding: 0 2px;
+    font-size: 10px;
+    font-family: 'roboto', sans-serif;
+    color: #a8a8a8;
+    position: absolute;
+    top: 4px;
+    left: 10px;
+}
+
+.antenna-input-container input[type=text] {
+    width: 150px;
+    padding: 15px 10px;
+    margin: 10px 10px 0 0;
+    background-color: #2F2F2F;
+    color: #A8A8A8;
+    border: solid 1px #7E7E7E;
+    text-align: left;
+}
+
+.antenna-input-container .radio {
+    font-family: 'roboto', sans-serif;
+    color: white;
+    width: 150px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.antenna-input-container .radio .item {
+    font-size: 12px;
+}
+
+.antenna-input-container .radio .item .option-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.antenna-input-container .radio .item .option-container .option {
+    color: #a8a8a8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.antenna-input-container .radio .item .option-container .option label {
+    margin-top: 5px;
+}
