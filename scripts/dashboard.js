@@ -30,6 +30,14 @@ function openMission() {
   console.log("hej");
 }
 
+create_mission_btn.addEventListener('click', briefInput);
+create_mission_btn.addEventListener('click', createMission);
+cancel_mission_btn.addEventListener('click', cancelMission);
+cancel_mission_btn2.addEventListener('click', cancelMission);
+cancel_mission_btn3.addEventListener('click', cancelMission);
+cancel_mission_btn4.addEventListener('click', cancelMission);
+cancel_mission_btn5.addEventListener('click', cancelMission);
+
 // Cecilie - brief inputfelt generering
 
 console.log(brief_input);
@@ -42,20 +50,12 @@ function briefInput() {
     for(let i = 0; i < briefArr.length; i++) {
         let input = document.createElement('input');
         input.setAttribute('class', 'brief-box');
-        input.setAttribute('placeholder', briefArr[i])
-        input.setAttribute('id', briefArr[i] )
+        input.setAttribute('placeholder', briefArr[i]);
+        input.setAttribute('id', briefArr[i]);
         brief_input.appendChild(input);
     }
 
 }
-
-create_mission_btn.addEventListener('click', briefInput);
-create_mission_btn.addEventListener('click', createMission);
-cancel_mission_btn.addEventListener('click', cancelMission);
-cancel_mission_btn2.addEventListener('click', cancelMission);
-cancel_mission_btn3.addEventListener('click', cancelMission);
-cancel_mission_btn4.addEventListener('click', cancelMission);
-cancel_mission_btn5.addEventListener('click', cancelMission);
 
 // Cecilie - brief til antenna
 const antenna_modal = document.getElementById('antenna-modal');
@@ -64,27 +64,16 @@ const brief_modal = document.getElementById('brief-modal');
 const back_brief = document.getElementById('back-to-brief');
 const brief_title = document.getElementById('title');
 
-const title = document.getElementById('title');
+let title = document.getElementById('title');
 
-// // console.log(title);
-// // console.log(title.value);
-
-// // function openAntenna() {
-// //     if (title.value ==='') {
-// //         alert (title.value);
-// //       }
-// //       else {
-// //         antenna_modal.style.display = "block";
-// //         brief_modal.style.display = "none";
-// //       }
-
-    // classlist.add
-
-//     // if (validateTitle() === true) {
-//     //     antenna_modal.style.display = "block";
-//     //     brief_modal.style.display = "none";
-//     // }
-
+// function checkAntenna() {
+//     if (brief_title.value ==='') {
+//         alert ("Indtast informationer");
+//       }
+//       else {
+//         alert ("Succes!");
+//             openAntenna();
+//       }
 // }
 
 function toBrief() {
@@ -92,13 +81,12 @@ function toBrief() {
     brief_modal.style.display = "block";
 }
 
-function toAntenna() {
+function openAntenna() {
     antenna_modal.style.display = "block";
     brief_modal.style.display = "none";
 }
 
-to_antenna.addEventListener('click', toAntenna);
-// to_antenna.addEventListener('click', openAntenna);
+to_antenna.addEventListener('click', openAntenna);
 back_brief.addEventListener('click', toBrief);
 
 // Mads - antenna til drone
