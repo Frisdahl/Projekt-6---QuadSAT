@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,6 +14,7 @@
     <script src="./scripts/alexander.js" defer></script> -->
     <title>Dashboard</title>
 </head>
+
 <body>
 
     <main>
@@ -158,31 +160,31 @@
                         <input type="text" placeholder="Model">
                         <input type="text" placeholder="Effective diameter">
                         <div class="configuration">
-                            <label for="">Configuration</label>
+                            <label>Configuration</label>
                             <input type="text" placeholder="Latitude">
                         </div>
                     </div>
                     <div class="grid-item">
                         <div class="configuration">
-                            <label for="">Configuration</label>
+                            <label>Configuration</label>
                             <input type="text" placeholder="Longitude">
                         </div>
                         <div class="configuration">
-                            <label for="">Configuration</label>
+                            <label>Configuration</label>
                             <input type="text" placeholder="Altitude">
                         </div>
                         <div class="configuration">
-                            <label for="">Configuration</label>
+                            <label>Configuration</label>
                             <input type="text" placeholder="Azimuth">
                         </div>
                         <div class="configuration">
-                            <label for="">Configuration</label>
+                            <label>Configuration</label>
                             <input type="text" placeholder="Elevation">
                         </div>
                     </div>
                     <div class="grid-item">
                         <div class="configuration">
-                            <label for="">Configuration</label>
+                            <label>Configuration</label>
                             <input type="text" placeholder="Frequency">
                         </div>
                         <div class="radio">
@@ -219,7 +221,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="brief-bottom-container" style="padding-left: 20px; display:flex; justify-content:space-between">
+                <div class="brief-bottom-container"
+                    style="padding-left: 20px; display:flex; justify-content:space-between">
                     <button class="cta-btn alt" id="back-to-brief">
                         BACK TO BRIEF
                     </button>
@@ -231,7 +234,7 @@
 
             <!-- Drone modalen -->
             <div class="brief-container" id="drone-modal" style="display: none;">
-                 <div class="icon">
+                <div class="icon">
                     <img class="close-btn" src="./img/exit.png" alt="This is a closing icon" id="close-btn-id3">
                 </div>
                 <div class="brief-top">
@@ -255,7 +258,8 @@
                     <input class="brief-box" id="payload" type="text" placeholder="Payload">
                     <input class="brief-box" id="connection" type="text" placeholder="Connection status: Connected">
                 </div>
-                <div class="brief-bottom-container" style="padding-left: 20px; display:flex; justify-content:space-between">
+                <div class="brief-bottom-container"
+                    style="padding-left: 20px; display:flex; justify-content:space-between">
                     <button class="cta-btn alt" id="back-to-antenna">
                         BACK TO ANTENNA
                     </button>
@@ -266,40 +270,40 @@
                 </div>
             </div>
 
-             <!-- Open mission modal -->
+            <!-- Open mission modal -->
             <div class="brief-container" id="open-mission-modal" style="display: none;">
-            <div class="brief-top">
-                <div class="create-mission">
-                    <img src="./img/emblem-hvid.png" alt="This is a logo">
-                    <h2>Opening mission...</h2>
-                </div>
-                <div class="icon">
-                    <img class="close-btn" src="./img/exit.png" alt="This is a closing icon" id="close-btn-id4">
-                </div>
-            </div>
-            <h2 class="open-title">Recent</h2>
-            <div class="open-middle-container1">
-                <div class="recent-container">
-                    <div class="mission-container1">
-                        <div class="text-area">
-                            <h4>Mission example 1</h4>
-                            <p>Last visited: 01-01-2020</p>
-                            <p>Created: 01-01-2020</p>
-                        </div>
-                        <input type="checkbox" class="checkbox-open">
+                <div class="brief-top">
+                    <div class="create-mission">
+                        <img src="./img/emblem-hvid.png" alt="This is a logo">
+                        <h2>Opening mission...</h2>
                     </div>
-                    <div class="mission-container2">
-                        <div class="text-area">
-                            <h4>Mission example 2</h4>
-                            <p>Last visited: 01-01-2020</p>
-                            <p>Created: 01-01-2020</p>
-                        </div>
-                        <input type="checkbox" class="checkbox-open">
+                    <div class="icon">
+                        <img class="close-btn" src="./img/exit.png" alt="This is a closing icon" id="close-btn-id4">
                     </div>
                 </div>
-            </div>
-            <h2 class="open-title">Open</h2>
-            <div class="open-middle-container2">
+                <h2 class="open-title">Recent</h2>
+                <div class="open-middle-container1">
+                    <div class="recent-container">
+                        <div class="mission-container1">
+                            <div class="text-area">
+                                <h4>Mission example 1</h4>
+                                <p>Last visited: 01-01-2020</p>
+                                <p>Created: 01-01-2020</p>
+                            </div>
+                            <input type="checkbox" class="checkbox-open">
+                        </div>
+                        <div class="mission-container2">
+                            <div class="text-area">
+                                <h4>Mission example 2</h4>
+                                <p>Last visited: 01-01-2020</p>
+                                <p>Created: 01-01-2020</p>
+                            </div>
+                            <input type="checkbox" class="checkbox-open">
+                        </div>
+                    </div>
+                </div>
+                <h2 class="open-title">Open</h2>
+                <div class="open-middle-container2">
                     <div class="files-container">
                         <div class="title-container">
                             <p>Name</p>
@@ -333,19 +337,19 @@
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="open-bottom-container">
+                    <div class="left-btn-container">
+                        <button class="cta-btn alt" id="close-btn-id5">CANCEL</button>
+                    </div>
+                    <div class="right-btn1">
+                        <button class="cta-btn">CREATE, COPY AND EDIT</button>
+                    </div>
+                    <div class="right-btn2">
+                        <button class="cta-btn">OPEN SELECTED</button>
+                    </div>
+                </div>
             </div>
-            <div class="open-bottom-container">
-                <div class="left-btn-container">
-                    <button class="cta-btn alt" id="close-btn-id5">CANCEL</button>
-                </div>
-                <div class="right-btn1">
-                    <button class="cta-btn">CREATE, COPY AND EDIT</button>
-                </div>
-                <div class="right-btn2">
-                <button class="cta-btn">OPEN SELECTED</button>
-                </div>
-            </div>
-        </div>
 
         </div>
     </main>
@@ -355,4 +359,5 @@
     </div>
 
 </body>
+
 </html>

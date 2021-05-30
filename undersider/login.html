@@ -1,69 +1,63 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="../CSS/login.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <script src="../scripts/login.js" defer></script>
-    <script src="../scripts/faq.js" defer></script>
-    <title>QuadSAT - login</title>
-  </head>
-  <body>
 
-    <main>
-      <div class="login-container">
-        <div class="item-container">
-          <div class="logo-container">
-            <img src="../img/quadsat-logo-hvid.png" alt="">
-          </div>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="../CSS/login.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <script src="../scripts/login.js" defer></script>
+  <script src="../scripts/faq.js" defer></script>
+  <title>QuadSAT - login</title>
+</head>
+
+<body>
+
+  <main>
+    <div class="login-container">
+      <div class="item-container">
+        <div class="logo-container">
+          <img src="../img/quadsat-logo-hvid.png" alt="">
+        </div>
 
 
-          <div class="form-container">
-            <div class="input-container">
+        <div class="form-container">
+          <div class="input-container">
             <form class="login-form" action="index.html" method="post" id="login-form">
-              <input class="input-box" id="username" type="text" name="" value="" placeholder="Username">
-              <input class="input-box" id="password" type="password" name="" value="" placeholder="Password">
-            </div>
-              <div>
-                <a href="forgot-password.html">
-                <label for="">Forgot password?</label>
-                </a>
-                <button class="cta-btn" id="input-btn-login" type="button"><a href="../dashboard.html" onclick="loginLink">LOGIN</a> </button>
-              </div>
+              <input class="input-box" id="username" type="text" placeholder="Username">
+              <input class="input-box" id="password" type="password" placeholder="Password">
             </form>
           </div>
-
-
-          <div class="bottom-container">
-            <button class="btn">LOGIN AS GUEST</button>
-            <button class="btn">CREATE ACCOUNT</button>
+          <div>
+            <label><a href="forgot-password.html">Forgot password?</a></label>
+            <button class="cta-btn" id="input-btn-login" type="button" onclick="loginLink()">LOGIN</button>
           </div>
-
         </div>
-      </div>
 
-      <button class="transparent-btn" type="button" id="faq-btn" name="button">
-        <span class="material-icons" id="faq-icon">help_outline</span>
+
+        <div class="bottom-container">
+          <button class="btn">LOGIN AS GUEST</button>
+          <button class="btn">CREATE ACCOUNT</button>
+        </div>
+
+      </div>
+    </div>
+
+    <button class="transparent-btn" type="button" id="faq-btn" name="button">
+      <span class="material-icons" id="faq-icon">help_outline</span>
+    </button>
+
+    <div class="faq-container" id="faq" style="display:none">
+
+      <button type="button" onclick="closeFaq()" class="transparent-btn" id="faq-cancel-btn" name="button">
+        <span class="material-icons">cancel</span>
       </button>
 
-
-
-
-
-
-
-      <div class="faq-container" id="faq" style="display:none">
-
-        <button type="button" onclick="closeFaq" class="transparent-btn" id="faq-cancel-btn" name="button">
-          <span class="material-icons">cancel</span>
-        </button>
-
-        <div class="blue-side">
-          <div class="faq-logo-container">
-            <img src="../img/hvid-logo.png" alt="">
-          </div>
-          <h3 id="faq-h3">FAQ</h3>
+      <div class="blue-side">
+        <div class="faq-logo-container">
+          <img src="../img/hvid-logo.png" alt="">
         </div>
+        <h3 id="faq-h3">FAQ</h3>
+      </div>
 
       <div class="faq-all-icons-container">
         <h4 id="faq-title-h4">Need some help?</h4>
@@ -71,46 +65,47 @@
         <div class="faq-icon-container">
           <a href="https://quadsat.com/about/management/">
             <div class="faq-management-container">
-               <div class="mangement-img-container">
-                  <img src="../img/management.png" id="img-mangement" alt="">
+              <div class="mangement-img-container">
+                <img src="../img/management.png" alt="">
               </div>
-              <p id="sub-title">Management</p>
+              <p>Management</p>
             </div>
           </a>
 
-        <a href="https://quadsat.com/about/investors/">
-          <div class="faq-investors-container">
-             <div class="mangement-img-container">
-                <img src="../img/investor.png" id="img-mangement" alt="">
+          <a href="https://quadsat.com/about/investors/">
+            <div class="faq-investors-container">
+              <div class="mangement-img-container">
+                <img src="../img/investor.png" alt="">
+              </div>
+              <p>Investors</p>
             </div>
-            <p id="sub-title">Investors</p>
-          </div>
-        </a>
+          </a>
 
 
-        <a href="https://quadsat.com/careers/">
-          <div class="faq-careers-container">
-             <div class="mangement-img-container">
-                <img src="../img/careers.png" id="img-mangement" alt="">
+          <a href="https://quadsat.com/careers/">
+            <div class="faq-careers-container">
+              <div class="mangement-img-container">
+                <img src="../img/careers.png" alt="">
+              </div>
+              <p>Careers</p>
             </div>
-            <p id="sub-title">Careers</p>
-          </div>
-        </a>
+          </a>
 
 
-        <a href="https://quadsat.com/about/contact/">
-          <div class="faq-contact-container">
-             <div class="mangement-img-container">
-                <img src="../img/contact.png" id="img-mangement" alt="">
+          <a href="https://quadsat.com/about/contact/">
+            <div class="faq-contact-container">
+              <div class="mangement-img-container">
+                <img src="../img/contact.png" alt="">
+              </div>
+              <p>Contact</p>
             </div>
-            <p id="sub-title">Contact</p>
-          </div>
-        </a>
+          </a>
+        </div>
       </div>
     </div>
-  </div>
 
-    </main>
+  </main>
 
-  </body>
+</body>
+
 </html>

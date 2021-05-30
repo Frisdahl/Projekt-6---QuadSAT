@@ -22,12 +22,12 @@ function createMission() {
 }
 
 function cancelMission() {
-  mission_container.style.display = "none";
+    mission_container.style.display = "none";
 }
 
 
 function openMission() {
-  console.log("hej");
+    console.log("hej");
 }
 
 create_mission_btn.addEventListener('click', briefInput);
@@ -40,14 +40,12 @@ cancel_mission_btn5.addEventListener('click', cancelMission);
 
 // Cecilie - brief inputfelt generering
 
-console.log(brief_input);
-
 function briefInput() {
     brief_input.innerHTML = '';
 
-    let briefArr = ['Title', 'Operator', 'Location', 'Date - dd.mm.yyyy'];
+    let briefArr = ['title', 'operator', 'location', 'date - dd.mm.yyyy'];
 
-    for(let i = 0; i < briefArr.length; i++) {
+    for (let i = 0; i < briefArr.length; i++) {
         let input = document.createElement('input');
         input.setAttribute('class', 'brief-box');
         input.setAttribute('placeholder', briefArr[i]);
@@ -64,17 +62,14 @@ const brief_modal = document.getElementById('brief-modal');
 const back_brief = document.getElementById('back-to-brief');
 const brief_title = document.getElementById('title');
 
-let title = document.getElementById('title');
-
-// function checkAntenna() {
-//     if (brief_title.value ==='') {
-//         alert ("Indtast informationer");
-//       }
-//       else {
-//         alert ("Succes!");
-//             openAntenna();
-//       }
-// }
+function checkAntenna() {
+    if (brief_title.value === '') {
+        alert("Indtast informationer");
+    }
+    else {
+        openAntenna();
+    }
+}
 
 function toBrief() {
     antenna_modal.style.display = "none";
@@ -94,7 +89,6 @@ const next_to_drone = document.getElementById('next-to-drone');
 const back_to_antenna = document.getElementById('back-to-antenna');
 const drone_modal = document.getElementById('drone-modal');
 const drone_input = document.getElementById('drone-input');
-// const open_mission_btn = document.getElementById('open-mission');
 const open_mission_modal = document.getElementById('open-mission-modal');
 
 function nextToDrone() {
@@ -104,7 +98,7 @@ function nextToDrone() {
 
     let droneArr = ['Drone', 'Payload', 'Connection status: connected'];
 
-    for(let i = 0; i < droneArr.length; i++) {
+    for (let i = 0; i < droneArr.length; i++) {
         let input = document.createElement('input');
         input.setAttribute('class', 'brief-box');
         input.setAttribute('placeholder', droneArr[i])
@@ -155,7 +149,7 @@ function confirmClear() {
 }
 
 function createMissionSidebar() {
-    if(mission_list.innerText !== '') {
+    if (mission_list.innerText !== '') {
         alert('You have already created some mission files. Please clear list.');
     } else {
         let missionArr = ['UCL', 'Test flight', 'Hong Kong'];
@@ -173,11 +167,8 @@ function createMissionSidebar() {
 clear_btn.addEventListener('click', clearList);
 cancel_clear.addEventListener('click', cancelClear);
 confirm_clear.addEventListener('click', confirmClear);
-create_mission_sidebar.addEventListener('click', createMission);
+create_mission_sidebar.addEventListener('click', createMissionSidebar);
 open_mission_sidebar.addEventListener('click', openMission);
-
-
-
 
 // Functions not yet implemented
 const settings = document.getElementById('settings');
@@ -187,9 +178,9 @@ const remove_mission = document.getElementById('remove-missions');
 const search_mission = document.getElementById('search-missions');
 const create_template = document.getElementById('create-template');
 
-settings.addEventListener('click', () => {alert('Settings to be implemented later')});
-account.addEventListener('click', () => {alert('Account box to be implemented later')});
-search.addEventListener('click', () => {alert('search functionality to be implemented later')});
-remove_mission.addEventListener('click', () => {alert('remove functionality to be implemented later')});
-search_mission.addEventListener('click', () => {alert('search functionality to be implemented later')});
-create_template.addEventListener('click', () => {alert('template functionality to be implemented later')});
+settings.addEventListener('click', () => { alert('Settings to be implemented later') });
+account.addEventListener('click', () => { alert('Account box to be implemented later') });
+search.addEventListener('click', () => { alert('search functionality to be implemented later') });
+remove_mission.addEventListener('click', () => { alert('remove functionality to be implemented later') });
+search_mission.addEventListener('click', () => { alert('search functionality to be implemented later') });
+create_template.addEventListener('click', () => { alert('template functionality to be implemented later') });
